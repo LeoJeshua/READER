@@ -18,7 +18,7 @@ data** needed to reproduce the main results in the paper.
 
 ## Repository layout
 
-```
+```log
 src/provenance_tracker/   Python library (importable as `provenance_tracker`)
 data/agent/               500-prompt agentic probe + 50-target registry
 data/mmlu_pro/            Local copy of TIGER-Lab/MMLU-Pro (CC-BY-4.0)
@@ -94,15 +94,7 @@ for the full argument list of any pipeline.
 
 ## Citation
 
-```bibtex
-@inproceedings{reader2026anonymous,
-  title     = {{READER}: Robust Evidence-based Authorship Decoding via Extracted Representations},
-  author    = {Anonymous},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
-  year      = {2026},
-  note      = {Under review}
-}
-```
+TBD
 
 ## License
 
