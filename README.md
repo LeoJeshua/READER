@@ -7,12 +7,6 @@
 
 ## Overview
 
-READER identifies the source large language model behind a black-box
-text-generation API without accessing the target's weights. A frozen
-open-weight decoder — the *proxy* — reads `(prompt, response)` pairs
-sampled from the target and produces a low-dimensional fingerprint that
-linearly separates candidate models with strong cross-domain robustness.
-
 This repository ships the **library** and **probe / target / MMLU-Pro
 data** needed to reproduce the main results in the paper.
 
