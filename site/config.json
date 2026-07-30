@@ -49,6 +49,6 @@
     "signatureCosine": "Cosine similarity between this model's Agent500 and Math100 signatures. Higher values indicate stronger cross-domain stability.",
     "percentile": "Rank converted to a 0-100 percentile among 165 candidates. Higher is better; 100% corresponds to rank 1.",
     "responses": "Number of responses in the selected domain averaged to form this model-level signature.",
-    "nearestSimilarity": "Cosine similarity between model-level DC-AC signatures before t-SNE. DC and AC are L2-normalized separately and weighted equally, so the score is the mean of their individual cosine similarities. Higher is more similar."
+    "nearestSimilarity": "Domain-centered cosine similarity before t-SNE. DC and AC are L2-normalized separately and concatenated with equal weight; the domain-wide mean signature is then subtracted and each centered signature is normalized again. Higher is more similar."
   }
 }
