@@ -3,7 +3,7 @@
   "brand": {
     "eyebrow": "READER / 165-WAY",
     "title": "Model Provenance Atlas",
-    "subtitle": "Qwen3.5-9B Signatures across Agent500 and Math100"
+    "subtitle": "Qwen3.5-9B Signatures"
   },
   "links": {
     "paper": "https://arxiv.org/abs/2606.10794",
