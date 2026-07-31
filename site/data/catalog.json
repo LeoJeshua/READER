@@ -6,7 +6,7 @@
       "id": "20260730",
       "label": "20260730",
       "modelCount": 165,
-      "defaultMethod": "reader-qwen35-9b",
+      "defaultMethod": "reader-qwen35-27b",
       "methods": [
         {
           "id": "reader-qwen35-9b",
@@ -15,7 +15,8 @@
           "shortLabel": "Qwen3.5-9B",
           "subtitle": "Qwen3.5-9B Signatures",
           "status": "available",
-          "data": "data/versions/20260730/reader-qwen35-9b.json"
+          "data": "data/versions/20260730/reader-qwen35-9b.json",
+          "agent500K100Accuracy": 0.964
         },
         {
           "id": "reader-llama31-8b-instruct",
@@ -24,7 +25,8 @@
           "shortLabel": "Llama-3.1-8B-Instruct",
           "subtitle": "Llama-3.1-8B-Instruct Signatures",
           "status": "available",
-          "data": "data/versions/20260730/reader-llama31-8b-instruct.json"
+          "data": "data/versions/20260730/reader-llama31-8b-instruct.json",
+          "agent500K100Accuracy": 0.95
         },
         {
           "id": "reader-gemma4-12b",
@@ -33,7 +35,8 @@
           "shortLabel": "Gemma-4-12B-it",
           "subtitle": "Gemma-4-12B-it Signatures",
           "status": "available",
-          "data": "data/versions/20260730/reader-gemma4-12b.json"
+          "data": "data/versions/20260730/reader-gemma4-12b.json",
+          "agent500K100Accuracy": 0.956
         },
         {
           "id": "reader-ministral3-8b",
@@ -42,7 +45,8 @@
           "shortLabel": "Ministral-3-8B-Instruct",
           "subtitle": "Ministral-3-8B-Instruct Signatures",
           "status": "available",
-          "data": "data/versions/20260730/reader-ministral3-8b.json"
+          "data": "data/versions/20260730/reader-ministral3-8b.json",
+          "agent500K100Accuracy": 0.946
         },
         {
           "id": "reader-olmo3-7b-instruct",
@@ -51,7 +55,8 @@
           "shortLabel": "OLMo-3-7B-Instruct",
           "subtitle": "OLMo-3-7B-Instruct Signatures",
           "status": "available",
-          "data": "data/versions/20260730/reader-olmo3-7b-instruct.json"
+          "data": "data/versions/20260730/reader-olmo3-7b-instruct.json",
+          "agent500K100Accuracy": 0.944
         },
         {
           "id": "reader-qwen3-8b",
@@ -60,7 +65,8 @@
           "shortLabel": "Qwen3-8B",
           "subtitle": "Qwen3-8B Signatures",
           "status": "available",
-          "data": "data/versions/20260730/reader-qwen3-8b.json"
+          "data": "data/versions/20260730/reader-qwen3-8b.json",
+          "agent500K100Accuracy": 0.956
         },
         {
           "id": "reader-qwen3-32b",
@@ -69,7 +75,8 @@
           "shortLabel": "Qwen3-32B",
           "subtitle": "Qwen3-32B Signatures",
           "status": "available",
-          "data": "data/versions/20260730/reader-qwen3-32b.json"
+          "data": "data/versions/20260730/reader-qwen3-32b.json",
+          "agent500K100Accuracy": 0.958
         },
         {
           "id": "reader-qwen35-27b",
@@ -78,7 +85,8 @@
           "shortLabel": "Qwen3.5-27B",
           "subtitle": "Qwen3.5-27B Signatures",
           "status": "available",
-          "data": "data/versions/20260730/reader-qwen35-27b.json"
+          "data": "data/versions/20260730/reader-qwen35-27b.json",
+          "agent500K100Accuracy": 0.97
         },
         {
           "id": "llm-dna-mpnet",
@@ -87,7 +95,8 @@
           "shortLabel": "MPNet",
           "subtitle": "MPNet Response Signatures",
           "status": "available",
-          "data": "data/versions/20260730/llm-dna-mpnet.json"
+          "data": "data/versions/20260730/llm-dna-mpnet.json",
+          "agent500K100Accuracy": 0.034
         },
         {
           "id": "llm-dna-bge",
@@ -96,7 +105,8 @@
           "shortLabel": "BGE-large-en-v1.5",
           "subtitle": "BGE Response Signatures",
           "status": "available",
-          "data": "data/versions/20260730/llm-dna-bge.json"
+          "data": "data/versions/20260730/llm-dna-bge.json",
+          "agent500K100Accuracy": 0.028
         },
         {
           "id": "llm-dna-qwen3-embedding",
@@ -105,7 +115,8 @@
           "shortLabel": "Qwen3-Embedding-8B",
           "subtitle": "Qwen3-Embedding-8B Response Signatures",
           "status": "available",
-          "data": "data/versions/20260730/llm-dna-qwen3-embedding.json"
+          "data": "data/versions/20260730/llm-dna-qwen3-embedding.json",
+          "agent500K100Accuracy": 0.018
         }
       ]
     }
