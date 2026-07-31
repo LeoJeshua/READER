@@ -1,0 +1,970 @@
+{
+  "schema_version": 1,
+  "protocol": "bench_a_dct_disjoint_evaluation_v1",
+  "proxy_tag": "qwen35_9b",
+  "features_source": "$CACHE_ROOT/bench_a_pairwise_blackbox_116/dct_alltokens_fullrank_best_layer_v2/features/qwen35_9b_L18_prompt_response_maxlen1024_alltokens_dctq2.npz",
+  "pairs_source": "$PROJECT_ROOT/outputs/bench_a_pairwise_blackbox_116/disjoint_protocol_v1/pairs_disjoint_union.jsonl",
+  "splits_source": "$PROJECT_ROOT/outputs/bench_a_pairwise_blackbox_116/disjoint_protocol_v1/splits_model_disjoint.json",
+  "split_type": "model_disjoint_family_visible",
+  "n_splits": 20,
+  "n_pair_union": 1647,
+  "n_models": 67,
+  "responses_per_model": 600,
+  "pair_metric": "mean aligned-prompt cosine",
+  "classifier": "split-local StandardScaler + linear SVM",
+  "bootstrap": "percentile bootstrap over split-level metric values; descriptive because held-out family pairs overlap",
+  "configs": {
+    "dct_dc_fullrank": {
+      "pair_feature_dimension": 1,
+      "summary": {
+        "accuracy_mean": 0.5998214285714285,
+        "accuracy_std": 0.15755010136072753,
+        "accuracy_bootstrap_95ci": [
+          0.5373169642857142,
+          0.67375
+        ],
+        "precision_mean": 0.6585714285714286,
+        "precision_std": 0.22496711777864928,
+        "precision_bootstrap_95ci": [
+          0.562142857142857,
+          0.7585714285714286
+        ],
+        "recall_mean": 0.8279761904761905,
+        "recall_std": 0.25064528399717134,
+        "recall_bootstrap_95ci": [
+          0.7109464285714285,
+          0.93
+        ],
+        "f1_mean": 0.6670787545787544,
+        "f1_std": 0.14432608484907422,
+        "f1_bootstrap_95ci": [
+          0.6039835164835164,
+          0.7291666666666666
+        ],
+        "auc_mean": 0.7963327664399095,
+        "auc_std": 0.18279763177065814,
+        "auc_bootstrap_95ci": [
+          0.715554974489796,
+          0.8749729166666667
+        ]
+      },
+      "splits": [
+        {
+          "split_id": 0,
+          "held_out_parent_families": [
+            "google/gemma-2-2b",
+            "meta-llama/Llama-3.2-1B-Instruct"
+          ],
+          "n_train": 88,
+          "n_test": 12,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "auc": 0.8055555555555557
+        },
+        {
+          "split_id": 1,
+          "held_out_parent_families": [
+            "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+            "meta-llama/Llama-3.2-1B-Instruct"
+          ],
+          "n_train": 92,
+          "n_test": 10,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "auc": 1.0
+        },
+        {
+          "split_id": 2,
+          "held_out_parent_families": [
+            "google/gemma-2-2b",
+            "google/gemma-2b"
+          ],
+          "n_train": 90,
+          "n_test": 12,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 0.6666666666666666,
+          "f1": 0.5714285714285714,
+          "auc": 0.44444444444444453
+        },
+        {
+          "split_id": 3,
+          "held_out_parent_families": [
+            "Qwen/Qwen2-1.5B",
+            "meta-llama/Llama-3.2-1B-Instruct"
+          ],
+          "n_train": 90,
+          "n_test": 12,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "auc": 0.8333333333333334
+        },
+        {
+          "split_id": 4,
+          "held_out_parent_families": [
+            "Qwen/Qwen2-1.5B",
+            "google/gemma-2b"
+          ],
+          "n_train": 92,
+          "n_test": 12,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "auc": 0.4444444444444444
+        },
+        {
+          "split_id": 5,
+          "held_out_parent_families": [
+            "deepseek-ai/deepseek-coder-1.3b-base",
+            "meta-llama/Llama-3.2-1B-Instruct"
+          ],
+          "n_train": 84,
+          "n_test": 14,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": 1.0
+        },
+        {
+          "split_id": 6,
+          "held_out_parent_families": [
+            "meta-llama/Llama-3.2-3B-Instruct",
+            "microsoft/phi-2"
+          ],
+          "n_train": 98,
+          "n_test": 8,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "auc": 0.75
+        },
+        {
+          "split_id": 7,
+          "held_out_parent_families": [
+            "Qwen/Qwen2-1.5B",
+            "microsoft/phi-2"
+          ],
+          "n_train": 96,
+          "n_test": 10,
+          "accuracy": 0.6,
+          "precision": 0.5714285714285714,
+          "recall": 0.8,
+          "f1": 0.6666666666666666,
+          "auc": 0.68
+        },
+        {
+          "split_id": 8,
+          "held_out_parent_families": [
+            "deepseek-ai/deepseek-coder-1.3b-base",
+            "microsoft/phi-2"
+          ],
+          "n_train": 90,
+          "n_test": 12,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "auc": 1.0
+        },
+        {
+          "split_id": 9,
+          "held_out_parent_families": [
+            "google/gemma-2b",
+            "microsoft/phi-2"
+          ],
+          "n_train": 96,
+          "n_test": 10,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 0.8,
+          "f1": 0.6153846153846154,
+          "auc": 0.76
+        },
+        {
+          "split_id": 10,
+          "held_out_parent_families": [
+            "Qwen/Qwen2.5-1.5B-Instruct",
+            "google/gemma-2-2b"
+          ],
+          "n_train": 84,
+          "n_test": 14,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "auc": 0.6938775510204082
+        },
+        {
+          "split_id": 11,
+          "held_out_parent_families": [
+            "deepseek-ai/deepseek-coder-1.3b-base",
+            "google/gemma-2b"
+          ],
+          "n_train": 86,
+          "n_test": 14,
+          "accuracy": 0.5714285714285714,
+          "precision": 1.0,
+          "recall": 0.14285714285714285,
+          "f1": 0.25,
+          "auc": 1.0
+        },
+        {
+          "split_id": 12,
+          "held_out_parent_families": [
+            "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+            "microsoft/phi-2"
+          ],
+          "n_train": 98,
+          "n_test": 8,
+          "accuracy": 0.625,
+          "precision": 0.6,
+          "recall": 0.75,
+          "f1": 0.6666666666666666,
+          "auc": 0.875
+        },
+        {
+          "split_id": 13,
+          "held_out_parent_families": [
+            "meta-llama/Llama-3.2-1B-Instruct",
+            "meta-llama/Llama-3.2-3B-Instruct"
+          ],
+          "n_train": 92,
+          "n_test": 10,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "auc": 1.0
+        },
+        {
+          "split_id": 14,
+          "held_out_parent_families": [
+            "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+            "google/gemma-2-2b"
+          ],
+          "n_train": 92,
+          "n_test": 10,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "auc": 0.76
+        },
+        {
+          "split_id": 15,
+          "held_out_parent_families": [
+            "Qwen/Qwen2-1.5B",
+            "meta-llama/Llama-3.2-3B-Instruct"
+          ],
+          "n_train": 94,
+          "n_test": 10,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "auc": 0.68
+        },
+        {
+          "split_id": 16,
+          "held_out_parent_families": [
+            "deepseek-ai/deepseek-coder-1.3b-base",
+            "meta-llama/Llama-3.2-3B-Instruct"
+          ],
+          "n_train": 88,
+          "n_test": 12,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "auc": 1.0
+        },
+        {
+          "split_id": 17,
+          "held_out_parent_families": [
+            "google/gemma-2-2b",
+            "microsoft/phi-2"
+          ],
+          "n_train": 94,
+          "n_test": 10,
+          "accuracy": 0.7,
+          "precision": 1.0,
+          "recall": 0.4,
+          "f1": 0.5714285714285714,
+          "auc": 0.64
+        },
+        {
+          "split_id": 18,
+          "held_out_parent_families": [
+            "google/gemma-2-2b",
+            "meta-llama/Llama-3.2-3B-Instruct"
+          ],
+          "n_train": 92,
+          "n_test": 10,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "auc": 0.56
+        },
+        {
+          "split_id": 19,
+          "held_out_parent_families": [
+            "Qwen/Qwen2.5-1.5B-Instruct",
+            "deepseek-ai/deepseek-coder-1.3b-base"
+          ],
+          "n_train": 80,
+          "n_test": 16,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": 1.0
+        }
+      ]
+    },
+    "dct_ac_fullrank": {
+      "pair_feature_dimension": 1,
+      "summary": {
+        "accuracy_mean": 0.744345238095238,
+        "accuracy_std": 0.16491033561459092,
+        "accuracy_bootstrap_95ci": [
+          0.6710119047619049,
+          0.8149419642857141
+        ],
+        "precision_mean": 0.8686904761904761,
+        "precision_std": 0.20860088262347434,
+        "precision_bootstrap_95ci": [
+          0.7695238095238095,
+          0.9535714285714286
+        ],
+        "recall_mean": 0.6486904761904762,
+        "recall_std": 0.2751174506969788,
+        "recall_bootstrap_95ci": [
+          0.5263065476190476,
+          0.7703601190476189
+        ],
+        "f1_mean": 0.694577367077367,
+        "f1_std": 0.2180928901648654,
+        "f1_bootstrap_95ci": [
+          0.5953278318903319,
+          0.7869325119325119
+        ],
+        "auc_mean": 0.8523735827664399,
+        "auc_std": 0.1614807221478151,
+        "auc_bootstrap_95ci": [
+          0.7785086876417233,
+          0.9188495039682542
+        ]
+      },
+      "splits": [
+        {
+          "split_id": 0,
+          "held_out_parent_families": [
+            "google/gemma-2-2b",
+            "meta-llama/Llama-3.2-1B-Instruct"
+          ],
+          "n_train": 88,
+          "n_test": 12,
+          "accuracy": 0.8333333333333334,
+          "precision": 0.8333333333333334,
+          "recall": 0.8333333333333334,
+          "f1": 0.8333333333333334,
+          "auc": 0.8333333333333334
+        },
+        {
+          "split_id": 1,
+          "held_out_parent_families": [
+            "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+            "meta-llama/Llama-3.2-1B-Instruct"
+          ],
+          "n_train": 92,
+          "n_test": 10,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "auc": 1.0
+        },
+        {
+          "split_id": 2,
+          "held_out_parent_families": [
+            "google/gemma-2-2b",
+            "google/gemma-2b"
+          ],
+          "n_train": 90,
+          "n_test": 12,
+          "accuracy": 0.4166666666666667,
+          "precision": 0.3333333333333333,
+          "recall": 0.16666666666666666,
+          "f1": 0.2222222222222222,
+          "auc": 0.4722222222222222
+        },
+        {
+          "split_id": 3,
+          "held_out_parent_families": [
+            "Qwen/Qwen2-1.5B",
+            "meta-llama/Llama-3.2-1B-Instruct"
+          ],
+          "n_train": 90,
+          "n_test": 12,
+          "accuracy": 0.9166666666666666,
+          "precision": 0.8571428571428571,
+          "recall": 1.0,
+          "f1": 0.9230769230769231,
+          "auc": 0.9722222222222223
+        },
+        {
+          "split_id": 4,
+          "held_out_parent_families": [
+            "Qwen/Qwen2-1.5B",
+            "google/gemma-2b"
+          ],
+          "n_train": 92,
+          "n_test": 12,
+          "accuracy": 0.5833333333333334,
+          "precision": 0.6,
+          "recall": 0.5,
+          "f1": 0.5454545454545454,
+          "auc": 0.5
+        },
+        {
+          "split_id": 5,
+          "held_out_parent_families": [
+            "deepseek-ai/deepseek-coder-1.3b-base",
+            "meta-llama/Llama-3.2-1B-Instruct"
+          ],
+          "n_train": 84,
+          "n_test": 14,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": 1.0
+        },
+        {
+          "split_id": 6,
+          "held_out_parent_families": [
+            "meta-llama/Llama-3.2-3B-Instruct",
+            "microsoft/phi-2"
+          ],
+          "n_train": 98,
+          "n_test": 8,
+          "accuracy": 0.875,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571,
+          "auc": 1.0
+        },
+        {
+          "split_id": 7,
+          "held_out_parent_families": [
+            "Qwen/Qwen2-1.5B",
+            "microsoft/phi-2"
+          ],
+          "n_train": 96,
+          "n_test": 10,
+          "accuracy": 0.6,
+          "precision": 1.0,
+          "recall": 0.2,
+          "f1": 0.3333333333333333,
+          "auc": 0.84
+        },
+        {
+          "split_id": 8,
+          "held_out_parent_families": [
+            "deepseek-ai/deepseek-coder-1.3b-base",
+            "microsoft/phi-2"
+          ],
+          "n_train": 90,
+          "n_test": 12,
+          "accuracy": 0.8333333333333334,
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "auc": 1.0
+        },
+        {
+          "split_id": 9,
+          "held_out_parent_families": [
+            "google/gemma-2b",
+            "microsoft/phi-2"
+          ],
+          "n_train": 96,
+          "n_test": 10,
+          "accuracy": 0.8,
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1": 0.75,
+          "auc": 0.8
+        },
+        {
+          "split_id": 10,
+          "held_out_parent_families": [
+            "Qwen/Qwen2.5-1.5B-Instruct",
+            "google/gemma-2-2b"
+          ],
+          "n_train": 84,
+          "n_test": 14,
+          "accuracy": 0.5714285714285714,
+          "precision": 1.0,
+          "recall": 0.14285714285714285,
+          "f1": 0.25,
+          "auc": 0.8979591836734694
+        },
+        {
+          "split_id": 11,
+          "held_out_parent_families": [
+            "deepseek-ai/deepseek-coder-1.3b-base",
+            "google/gemma-2b"
+          ],
+          "n_train": 86,
+          "n_test": 14,
+          "accuracy": 0.8571428571428571,
+          "precision": 1.0,
+          "recall": 0.7142857142857143,
+          "f1": 0.8333333333333334,
+          "auc": 0.8367346938775511
+        },
+        {
+          "split_id": 12,
+          "held_out_parent_families": [
+            "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+            "microsoft/phi-2"
+          ],
+          "n_train": 98,
+          "n_test": 8,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "auc": 0.875
+        },
+        {
+          "split_id": 13,
+          "held_out_parent_families": [
+            "meta-llama/Llama-3.2-1B-Instruct",
+            "meta-llama/Llama-3.2-3B-Instruct"
+          ],
+          "n_train": 92,
+          "n_test": 10,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "auc": 1.0
+        },
+        {
+          "split_id": 14,
+          "held_out_parent_families": [
+            "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+            "google/gemma-2-2b"
+          ],
+          "n_train": 92,
+          "n_test": 10,
+          "accuracy": 0.9,
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1": 0.8888888888888888,
+          "auc": 0.92
+        },
+        {
+          "split_id": 15,
+          "held_out_parent_families": [
+            "Qwen/Qwen2-1.5B",
+            "meta-llama/Llama-3.2-3B-Instruct"
+          ],
+          "n_train": 94,
+          "n_test": 10,
+          "accuracy": 0.8,
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1": 0.75,
+          "auc": 0.7600000000000001
+        },
+        {
+          "split_id": 16,
+          "held_out_parent_families": [
+            "deepseek-ai/deepseek-coder-1.3b-base",
+            "meta-llama/Llama-3.2-3B-Instruct"
+          ],
+          "n_train": 88,
+          "n_test": 12,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": 1.0
+        },
+        {
+          "split_id": 17,
+          "held_out_parent_families": [
+            "google/gemma-2-2b",
+            "microsoft/phi-2"
+          ],
+          "n_train": 94,
+          "n_test": 10,
+          "accuracy": 0.7,
+          "precision": 1.0,
+          "recall": 0.4,
+          "f1": 0.5714285714285714,
+          "auc": 0.6599999999999999
+        },
+        {
+          "split_id": 18,
+          "held_out_parent_families": [
+            "google/gemma-2-2b",
+            "meta-llama/Llama-3.2-3B-Instruct"
+          ],
+          "n_train": 92,
+          "n_test": 10,
+          "accuracy": 0.7,
+          "precision": 0.75,
+          "recall": 0.6,
+          "f1": 0.6666666666666666,
+          "auc": 0.68
+        },
+        {
+          "split_id": 19,
+          "held_out_parent_families": [
+            "Qwen/Qwen2.5-1.5B-Instruct",
+            "deepseek-ai/deepseek-coder-1.3b-base"
+          ],
+          "n_train": 80,
+          "n_test": 16,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "auc": 1.0
+        }
+      ]
+    },
+    "dct_dc_ac_fullrank": {
+      "pair_feature_dimension": 2,
+      "summary": {
+        "accuracy_mean": 0.7510119047619047,
+        "accuracy_std": 0.1640756399283996,
+        "accuracy_bootstrap_95ci": [
+          0.6764285714285715,
+          0.8206547619047619
+        ],
+        "precision_mean": 0.8716666666666667,
+        "precision_std": 0.20717008578567622,
+        "precision_bootstrap_95ci": [
+          0.7733333333333333,
+          0.9550000000000001
+        ],
+        "recall_mean": 0.6403571428571428,
+        "recall_std": 0.2667468788801291,
+        "recall_bootstrap_95ci": [
+          0.5213065476190476,
+          0.7566666666666667
+        ],
+        "f1_mean": 0.6966053391053391,
+        "f1_std": 0.2221795166080402,
+        "f1_bootstrap_95ci": [
+          0.5958685064935064,
+          0.7907352994227993
+        ],
+        "auc_mean": 0.8555189909297052,
+        "auc_std": 0.16454720383143015,
+        "auc_bootstrap_95ci": [
+          0.7802210034013605,
+          0.9232557893990927
+        ]
+      },
+      "splits": [
+        {
+          "split_id": 0,
+          "held_out_parent_families": [
+            "google/gemma-2-2b",
+            "meta-llama/Llama-3.2-1B-Instruct"
+          ],
+          "n_train": 88,
+          "n_test": 12,
+          "accuracy": 0.8333333333333334,
+          "precision": 0.8333333333333334,
+          "recall": 0.8333333333333334,
+          "f1": 0.8333333333333334,
+          "auc": 0.8333333333333334
+        },
+        {
+          "split_id": 1,
+          "held_out_parent_families": [
+            "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+            "meta-llama/Llama-3.2-1B-Instruct"
+          ],
+          "n_train": 92,
+          "n_test": 10,
+          "accuracy": 0.9,
+          "precision": 0.8333333333333334,
+          "recall": 1.0,
+          "f1": 0.9090909090909091,
+          "auc": 1.0
+        },
+        {
+          "split_id": 2,
+          "held_out_parent_families": [
+            "google/gemma-2-2b",
+            "google/gemma-2b"
+          ],
+          "n_train": 90,
+          "n_test": 12,
+          "accuracy": 0.4166666666666667,
+          "precision": 0.3333333333333333,
+          "recall": 0.16666666666666666,
+          "f1": 0.2222222222222222,
+          "auc": 0.4444444444444444
+        },
+        {
+          "split_id": 3,
+          "held_out_parent_families": [
+            "Qwen/Qwen2-1.5B",
+            "meta-llama/Llama-3.2-1B-Instruct"
+          ],
+          "n_train": 90,
+          "n_test": 12,
+          "accuracy": 0.8333333333333334,
+          "precision": 0.8333333333333334,
+          "recall": 0.8333333333333334,
+          "f1": 0.8333333333333334,
+          "auc": 0.9722222222222223
+        },
+        {
+          "split_id": 4,
+          "held_out_parent_families": [
+            "Qwen/Qwen2-1.5B",
+            "google/gemma-2b"
+          ],
+          "n_train": 92,
+          "n_test": 12,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "auc": 0.5277777777777777
+        },
+        {
+          "split_id": 5,
+          "held_out_parent_families": [
+            "deepseek-ai/deepseek-coder-1.3b-base",
+            "meta-llama/Llama-3.2-1B-Instruct"
+          ],
+          "n_train": 84,
+          "n_test": 14,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": 1.0
+        },
+        {
+          "split_id": 6,
+          "held_out_parent_families": [
+            "meta-llama/Llama-3.2-3B-Instruct",
+            "microsoft/phi-2"
+          ],
+          "n_train": 98,
+          "n_test": 8,
+          "accuracy": 0.875,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571,
+          "auc": 1.0
+        },
+        {
+          "split_id": 7,
+          "held_out_parent_families": [
+            "Qwen/Qwen2-1.5B",
+            "microsoft/phi-2"
+          ],
+          "n_train": 96,
+          "n_test": 10,
+          "accuracy": 0.6,
+          "precision": 1.0,
+          "recall": 0.2,
+          "f1": 0.3333333333333333,
+          "auc": 0.84
+        },
+        {
+          "split_id": 8,
+          "held_out_parent_families": [
+            "deepseek-ai/deepseek-coder-1.3b-base",
+            "microsoft/phi-2"
+          ],
+          "n_train": 90,
+          "n_test": 12,
+          "accuracy": 0.8333333333333334,
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "auc": 1.0
+        },
+        {
+          "split_id": 9,
+          "held_out_parent_families": [
+            "google/gemma-2b",
+            "microsoft/phi-2"
+          ],
+          "n_train": 96,
+          "n_test": 10,
+          "accuracy": 0.8,
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1": 0.75,
+          "auc": 0.8
+        },
+        {
+          "split_id": 10,
+          "held_out_parent_families": [
+            "Qwen/Qwen2.5-1.5B-Instruct",
+            "google/gemma-2-2b"
+          ],
+          "n_train": 84,
+          "n_test": 14,
+          "accuracy": 0.5714285714285714,
+          "precision": 1.0,
+          "recall": 0.14285714285714285,
+          "f1": 0.25,
+          "auc": 0.9183673469387754
+        },
+        {
+          "split_id": 11,
+          "held_out_parent_families": [
+            "deepseek-ai/deepseek-coder-1.3b-base",
+            "google/gemma-2b"
+          ],
+          "n_train": 86,
+          "n_test": 14,
+          "accuracy": 0.8571428571428571,
+          "precision": 1.0,
+          "recall": 0.7142857142857143,
+          "f1": 0.8333333333333334,
+          "auc": 0.8367346938775511
+        },
+        {
+          "split_id": 12,
+          "held_out_parent_families": [
+            "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+            "microsoft/phi-2"
+          ],
+          "n_train": 98,
+          "n_test": 8,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "auc": 0.9375
+        },
+        {
+          "split_id": 13,
+          "held_out_parent_families": [
+            "meta-llama/Llama-3.2-1B-Instruct",
+            "meta-llama/Llama-3.2-3B-Instruct"
+          ],
+          "n_train": 92,
+          "n_test": 10,
+          "accuracy": 0.5,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "auc": 1.0
+        },
+        {
+          "split_id": 14,
+          "held_out_parent_families": [
+            "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+            "google/gemma-2-2b"
+          ],
+          "n_train": 92,
+          "n_test": 10,
+          "accuracy": 0.9,
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1": 0.8888888888888888,
+          "auc": 0.92
+        },
+        {
+          "split_id": 15,
+          "held_out_parent_families": [
+            "Qwen/Qwen2-1.5B",
+            "meta-llama/Llama-3.2-3B-Instruct"
+          ],
+          "n_train": 94,
+          "n_test": 10,
+          "accuracy": 0.8,
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1": 0.75,
+          "auc": 0.7600000000000001
+        },
+        {
+          "split_id": 16,
+          "held_out_parent_families": [
+            "deepseek-ai/deepseek-coder-1.3b-base",
+            "meta-llama/Llama-3.2-3B-Instruct"
+          ],
+          "n_train": 88,
+          "n_test": 12,
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auc": 1.0
+        },
+        {
+          "split_id": 17,
+          "held_out_parent_families": [
+            "google/gemma-2-2b",
+            "microsoft/phi-2"
+          ],
+          "n_train": 94,
+          "n_test": 10,
+          "accuracy": 0.7,
+          "precision": 1.0,
+          "recall": 0.4,
+          "f1": 0.5714285714285714,
+          "auc": 0.6399999999999999
+        },
+        {
+          "split_id": 18,
+          "held_out_parent_families": [
+            "google/gemma-2-2b",
+            "meta-llama/Llama-3.2-3B-Instruct"
+          ],
+          "n_train": 92,
+          "n_test": 10,
+          "accuracy": 0.6,
+          "precision": 0.6,
+          "recall": 0.6,
+          "f1": 0.6,
+          "auc": 0.68
+        },
+        {
+          "split_id": 19,
+          "held_out_parent_families": [
+            "Qwen/Qwen2.5-1.5B-Instruct",
+            "deepseek-ai/deepseek-coder-1.3b-base"
+          ],
+          "n_train": 80,
+          "n_test": 16,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "auc": 1.0
+        }
+      ]
+    }
+  },
+  "complete": true
+}

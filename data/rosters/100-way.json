@@ -1,0 +1,752 @@
+[
+  {
+    "label": "qwen25_3b",
+    "repo_id": "Qwen/Qwen2.5-3B-Instruct",
+    "family": "qwen25",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen25_7b",
+    "repo_id": "Qwen/Qwen2.5-7B-Instruct",
+    "family": "qwen25",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen25_14b",
+    "repo_id": "Qwen/Qwen2.5-14B-Instruct",
+    "family": "qwen25",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen25_32b",
+    "repo_id": "Qwen/Qwen2.5-32B-Instruct",
+    "family": "qwen25",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen25_72b",
+    "repo_id": "Qwen/Qwen2.5-72B-Instruct",
+    "family": "qwen25",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen3_1_7b",
+    "repo_id": "Qwen/Qwen3-1.7B",
+    "family": "qwen3",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen3_1_7b_base",
+    "repo_id": "Qwen/Qwen3-1.7B-Base",
+    "family": "qwen3",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen3_4b",
+    "repo_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "family": "qwen3",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen3_4b_think",
+    "repo_id": "Qwen/Qwen3-4B-Thinking-2507",
+    "family": "qwen3",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen3_14b",
+    "repo_id": "Qwen/Qwen3-14B",
+    "family": "qwen3",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen3_30b_a3b_inst",
+    "repo_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "family": "qwen3",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen3_30b_a3b_think",
+    "repo_id": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+    "family": "qwen3",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen3_next_80b_inst",
+    "repo_id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+    "family": "qwen3",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen3_next_80b_think",
+    "repo_id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
+    "family": "qwen3",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen3_coder_30b",
+    "repo_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "family": "qwen3",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwq_32b",
+    "repo_id": "Qwen/QwQ-32B",
+    "family": "qwen3",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen35_4b",
+    "repo_id": "Qwen/Qwen3.5-4B",
+    "family": "qwen35",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen35_4b_base",
+    "repo_id": "Qwen/Qwen3.5-4B-Base",
+    "family": "qwen35",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen35_9b",
+    "repo_id": "Qwen/Qwen3.5-9B",
+    "family": "qwen35",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen35_9b_base",
+    "repo_id": "Qwen/Qwen3.5-9B-Base",
+    "family": "qwen35",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen35_27b",
+    "repo_id": "Qwen/Qwen3.5-27B",
+    "family": "qwen35",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen35_122b_a10b",
+    "repo_id": "Qwen/Qwen3.5-122B-A10B",
+    "family": "qwen35",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen36_27b",
+    "repo_id": "Qwen/Qwen3.6-27B",
+    "family": "qwen36",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "qwen15_moe_chat",
+    "repo_id": "Qwen/Qwen1.5-MoE-A2.7B-Chat",
+    "family": "qwen15",
+    "plot_family": "Qwen",
+    "source": "original50"
+  },
+  {
+    "label": "llama3_8b",
+    "repo_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "family": "llama",
+    "plot_family": "Llama",
+    "source": "original50"
+  },
+  {
+    "label": "llama3_70b",
+    "repo_id": "meta-llama/Meta-Llama-3-70B-Instruct",
+    "family": "llama",
+    "plot_family": "Llama",
+    "source": "original50"
+  },
+  {
+    "label": "llama31_8b",
+    "repo_id": "meta-llama/Llama-3.1-8B-Instruct",
+    "family": "llama",
+    "plot_family": "Llama",
+    "source": "original50"
+  },
+  {
+    "label": "llama31_70b",
+    "repo_id": "meta-llama/Llama-3.1-70B-Instruct",
+    "family": "llama",
+    "plot_family": "Llama",
+    "source": "original50"
+  },
+  {
+    "label": "llama32_1b_inst",
+    "repo_id": "meta-llama/Llama-3.2-1B-Instruct",
+    "family": "llama",
+    "plot_family": "Llama",
+    "source": "original50"
+  },
+  {
+    "label": "llama32_3b",
+    "repo_id": "meta-llama/Llama-3.2-3B-Instruct",
+    "family": "llama",
+    "plot_family": "Llama",
+    "source": "original50"
+  },
+  {
+    "label": "llama4_scout",
+    "repo_id": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+    "family": "llama",
+    "plot_family": "Llama",
+    "source": "original50"
+  },
+  {
+    "label": "mistral7b_v03",
+    "repo_id": "mistralai/Mistral-7B-Instruct-v0.3",
+    "family": "mistral",
+    "plot_family": "Mistral",
+    "source": "original50"
+  },
+  {
+    "label": "mistral_nemo",
+    "repo_id": "mistralai/Mistral-Nemo-Instruct-2407",
+    "family": "mistral",
+    "plot_family": "Mistral",
+    "source": "original50"
+  },
+  {
+    "label": "mixtral_8x7b",
+    "repo_id": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "family": "mistral",
+    "plot_family": "Mistral",
+    "source": "original50"
+  },
+  {
+    "label": "ds_distill_qwen_1_5b",
+    "repo_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "family": "deepseek",
+    "plot_family": "DeepSeek",
+    "source": "original50"
+  },
+  {
+    "label": "ds_distill_qwen_7b",
+    "repo_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "family": "deepseek",
+    "plot_family": "DeepSeek",
+    "source": "original50"
+  },
+  {
+    "label": "ds_distill_qwen_14b",
+    "repo_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "family": "deepseek",
+    "plot_family": "DeepSeek",
+    "source": "original50"
+  },
+  {
+    "label": "ds_distill_qwen_32b",
+    "repo_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "family": "deepseek",
+    "plot_family": "DeepSeek",
+    "source": "original50"
+  },
+  {
+    "label": "ds_v2_lite",
+    "repo_id": "deepseek-ai/DeepSeek-V2-Lite-Chat",
+    "family": "deepseek",
+    "plot_family": "DeepSeek",
+    "source": "original50"
+  },
+  {
+    "label": "gemma3_27b",
+    "repo_id": "google/gemma-3-27b-it",
+    "family": "gemma",
+    "plot_family": "Gemma",
+    "source": "original50"
+  },
+  {
+    "label": "gemma4_26b",
+    "repo_id": "google/gemma-4-26B-A4B-it",
+    "family": "gemma",
+    "plot_family": "Gemma",
+    "source": "original50"
+  },
+  {
+    "label": "gemma4_31b",
+    "repo_id": "google/gemma-4-31B-it",
+    "family": "gemma",
+    "plot_family": "Gemma",
+    "source": "original50"
+  },
+  {
+    "label": "phi3_mini",
+    "repo_id": "microsoft/Phi-3-mini-4k-instruct",
+    "family": "phi",
+    "plot_family": "Phi",
+    "source": "original50"
+  },
+  {
+    "label": "hunyuan_1_8b",
+    "repo_id": "tencent/Hunyuan-1.8B-Instruct",
+    "family": "hunyuan",
+    "plot_family": "Hunyuan",
+    "source": "original50"
+  },
+  {
+    "label": "gpt_oss_20b",
+    "repo_id": "openai/gpt-oss-20b",
+    "family": "gpt_oss",
+    "plot_family": "GPT",
+    "source": "original50"
+  },
+  {
+    "label": "gpt_oss_120b",
+    "repo_id": "openai/gpt-oss-120b",
+    "family": "gpt_oss",
+    "plot_family": "GPT",
+    "source": "original50"
+  },
+  {
+    "label": "glm45_air",
+    "repo_id": "zai-org/GLM-4.5-Air",
+    "family": "glm",
+    "plot_family": "GLM",
+    "source": "original50"
+  },
+  {
+    "label": "seed_oss_36b",
+    "repo_id": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+    "family": "other",
+    "plot_family": "Seed",
+    "source": "original50"
+  },
+  {
+    "label": "ernie_21b",
+    "repo_id": "baidu/ERNIE-4.5-21B-A3B-Thinking",
+    "family": "other",
+    "plot_family": "ERNIE",
+    "source": "original50"
+  },
+  {
+    "label": "lfm2_24b",
+    "repo_id": "LiquidAI/LFM2-24B-A2B",
+    "family": "other",
+    "plot_family": "LFM",
+    "source": "original50"
+  },
+  {
+    "label": "gpt4o",
+    "repo_id": "gpt-4o",
+    "family": "gpt",
+    "plot_family": "GPT",
+    "model_id": "gpt-4o",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "gpt4o_20241120",
+    "repo_id": "gpt-4o-2024-11-20",
+    "family": "gpt",
+    "plot_family": "GPT",
+    "model_id": "gpt-4o-2024-11-20",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "gpt41_mini_20250414",
+    "repo_id": "gpt-4.1-mini-2025-04-14",
+    "family": "gpt",
+    "plot_family": "GPT",
+    "model_id": "gpt-4.1-mini-2025-04-14",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "gpt41_20250414",
+    "repo_id": "gpt-4.1-2025-04-14",
+    "family": "gpt",
+    "plot_family": "GPT",
+    "model_id": "gpt-4.1-2025-04-14",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "gpt41_nano_20250414",
+    "repo_id": "gpt-4.1-nano-2025-04-14",
+    "family": "gpt",
+    "plot_family": "GPT",
+    "model_id": "gpt-4.1-nano-2025-04-14",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "gpt54_nano",
+    "repo_id": "gpt-5.4-nano",
+    "family": "gpt",
+    "plot_family": "GPT",
+    "model_id": "gpt-5.4-nano",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "qwen35_flash",
+    "repo_id": "qwen3.5-flash",
+    "family": "qwen",
+    "plot_family": "Qwen",
+    "model_id": "qwen3.5-flash",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "qwen35_plus",
+    "repo_id": "qwen3.5-plus",
+    "family": "qwen",
+    "plot_family": "Qwen",
+    "model_id": "qwen3.5-plus",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "gpt54_mini",
+    "repo_id": "gpt-5.4-mini",
+    "family": "gpt",
+    "plot_family": "GPT",
+    "model_id": "gpt-5.4-mini",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "gpt54",
+    "repo_id": "gpt-5.4",
+    "family": "gpt",
+    "plot_family": "GPT",
+    "model_id": "gpt-5.4",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "gpt55",
+    "repo_id": "gpt-5.5",
+    "family": "gpt",
+    "plot_family": "GPT",
+    "model_id": "gpt-5.5",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "gpt56_luna",
+    "repo_id": "gpt-5.6-luna",
+    "family": "gpt",
+    "plot_family": "GPT",
+    "model_id": "gpt-5.6-luna",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "gpt56_sol",
+    "repo_id": "gpt-5.6-sol",
+    "family": "gpt",
+    "plot_family": "GPT",
+    "model_id": "gpt-5.6-sol",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "gpt56_terra",
+    "repo_id": "gpt-5.6-terra",
+    "family": "gpt",
+    "plot_family": "GPT",
+    "model_id": "gpt-5.6-terra",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "qwen36_flash",
+    "repo_id": "qwen3.6-flash",
+    "family": "qwen",
+    "plot_family": "Qwen",
+    "model_id": "qwen3.6-flash",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "qwen36_plus",
+    "repo_id": "qwen3.6-plus",
+    "family": "qwen",
+    "plot_family": "Qwen",
+    "model_id": "qwen3.6-plus",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "glm47_flashx",
+    "repo_id": "glm-4.7-FlashX",
+    "family": "glm",
+    "plot_family": "GLM",
+    "model_id": "glm-4.7-FlashX",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "claude_opus46",
+    "repo_id": "claude-opus-4-6",
+    "family": "claude",
+    "plot_family": "Claude",
+    "model_id": "claude-opus-4-6",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "claude_opus47",
+    "repo_id": "claude-opus-4-7",
+    "family": "claude",
+    "plot_family": "Claude",
+    "model_id": "claude-opus-4-7",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "claude_opus48",
+    "repo_id": "claude-opus-4-8",
+    "family": "claude",
+    "plot_family": "Claude",
+    "model_id": "claude-opus-4-8",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "claude_sonnet4",
+    "repo_id": "claude-sonnet-4-20250514",
+    "family": "claude",
+    "plot_family": "Claude",
+    "model_id": "claude-sonnet-4-20250514",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "glm46",
+    "repo_id": "glm-4.6",
+    "family": "glm",
+    "plot_family": "GLM",
+    "model_id": "glm-4.6",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "claude_sonnet46",
+    "repo_id": "claude-sonnet-4-6",
+    "family": "claude",
+    "plot_family": "Claude",
+    "model_id": "claude-sonnet-4-6",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "mistral_small2501",
+    "repo_id": "mistralai/mistral-small-24b-instruct-2501",
+    "family": "mistral",
+    "plot_family": "Mistral",
+    "model_id": "mistralai/mistral-small-24b-instruct-2501",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "gemini25_flash_lite",
+    "repo_id": "gemini-2.5-flash-lite",
+    "family": "gemini",
+    "plot_family": "Gemini",
+    "model_id": "gemini-2.5-flash-lite",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "deepseek_v4_flash",
+    "repo_id": "deepseek-v4-flash",
+    "family": "deepseek",
+    "plot_family": "DeepSeek",
+    "model_id": "deepseek-v4-flash",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "qwen36_max",
+    "repo_id": "qwen3.6-max-preview",
+    "family": "qwen",
+    "plot_family": "Qwen",
+    "model_id": "qwen3.6-max-preview",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "gemini31_flash_lite",
+    "repo_id": "gemini-3.1-flash-lite-preview",
+    "family": "gemini",
+    "plot_family": "Gemini",
+    "model_id": "gemini-3.1-flash-lite-preview",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "qwen37_plus",
+    "repo_id": "qwen3.7-plus",
+    "family": "qwen",
+    "plot_family": "Qwen",
+    "model_id": "qwen3.7-plus",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "mistral_medium3",
+    "repo_id": "mistralai/mistral-medium-3",
+    "family": "mistral",
+    "plot_family": "Mistral",
+    "model_id": "mistralai/mistral-medium-3",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "deepseek_v3",
+    "repo_id": "deepseek-ai/DeepSeek-V3",
+    "family": "deepseek",
+    "plot_family": "DeepSeek",
+    "model_id": "deepseek-ai/DeepSeek-V3",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "deepseek_v31_terminus",
+    "repo_id": "deepseek-ai/DeepSeek-V3.1-Terminus",
+    "family": "deepseek",
+    "plot_family": "DeepSeek",
+    "model_id": "deepseek-ai/DeepSeek-V3.1-Terminus",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "deepseek_v32",
+    "repo_id": "deepseek-ai/DeepSeek-V3.2",
+    "family": "deepseek",
+    "plot_family": "DeepSeek",
+    "model_id": "deepseek-ai/DeepSeek-V3.2",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "deepseek_v4_pro",
+    "repo_id": "deepseek-v4-pro",
+    "family": "deepseek",
+    "plot_family": "DeepSeek",
+    "model_id": "deepseek-v4-pro",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "qwen3_coder_480b",
+    "repo_id": "qwen3-coder-480b-a35b-instruct",
+    "family": "qwen",
+    "plot_family": "Qwen",
+    "model_id": "qwen3-coder-480b-a35b-instruct",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "qwen3_max_20260123",
+    "repo_id": "qwen3-max-2026-01-23",
+    "family": "qwen",
+    "plot_family": "Qwen",
+    "model_id": "qwen3-max-2026-01-23",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "qwen35_397b_a17b",
+    "repo_id": "qwen3.5-397b-a17b",
+    "family": "qwen",
+    "plot_family": "Qwen",
+    "model_id": "qwen3.5-397b-a17b",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "qwen37_max_20260520",
+    "repo_id": "qwen3.7-max-2026-05-20",
+    "family": "qwen",
+    "plot_family": "Qwen",
+    "model_id": "qwen3.7-max-2026-05-20",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "minimax_text01",
+    "repo_id": "MiniMax-Text-01",
+    "family": "minimax",
+    "plot_family": "MiniMax",
+    "model_id": "MiniMax-Text-01",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "mistral_small31",
+    "repo_id": "mistralai/mistral-small-3.1-24b-instruct",
+    "family": "mistral",
+    "plot_family": "Mistral",
+    "model_id": "mistralai/mistral-small-3.1-24b-instruct",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "minimax_m3",
+    "repo_id": "MiniMax-M3",
+    "family": "minimax",
+    "plot_family": "MiniMax",
+    "model_id": "MiniMax-M3",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "glm47",
+    "repo_id": "glm-4.7",
+    "family": "glm",
+    "plot_family": "GLM",
+    "model_id": "glm-4.7",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "glm51",
+    "repo_id": "glm-5.1",
+    "family": "glm",
+    "plot_family": "GLM",
+    "model_id": "glm-5.1",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "glm52",
+    "repo_id": "glm-5.2",
+    "family": "glm",
+    "plot_family": "GLM",
+    "model_id": "glm-5.2",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "mistral_medium35",
+    "repo_id": "mistralai/mistral-medium-3-5",
+    "family": "mistral",
+    "plot_family": "Mistral",
+    "model_id": "mistralai/mistral-medium-3-5",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "kimi_k3",
+    "repo_id": "kimi-k3",
+    "family": "kimi",
+    "plot_family": "Kimi",
+    "model_id": "kimi-k3",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "mistral_large_2512",
+    "repo_id": "mistralai/mistral-large-2512",
+    "family": "mistral",
+    "plot_family": "Mistral",
+    "model_id": "mistralai/mistral-large-2512",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "mistral_medium31",
+    "repo_id": "mistralai/mistral-medium-3.1",
+    "family": "mistral",
+    "plot_family": "Mistral",
+    "model_id": "mistralai/mistral-medium-3.1",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "llama33_70b",
+    "repo_id": "meta-llama/llama-3.3-70b-instruct",
+    "family": "llama",
+    "plot_family": "Llama",
+    "model_id": "meta-llama/llama-3.3-70b-instruct",
+    "source": "api50_no_reasoning"
+  },
+  {
+    "label": "llama4_maverick",
+    "repo_id": "meta-llama/llama-4-maverick",
+    "family": "llama",
+    "plot_family": "Llama",
+    "model_id": "meta-llama/llama-4-maverick",
+    "source": "api50_no_reasoning"
+  }
+]

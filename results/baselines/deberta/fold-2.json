@@ -1,0 +1,73 @@
+{
+  "method": "deberta_v3_large_finetuned_text_classifier",
+  "model_path": "$MODEL_CACHE/models--microsoft--deberta-v3-large/snapshots/64a8c8eab3e352a784c658aef62be1662607476f",
+  "transformers_version": "4.48.3",
+  "tokenizer_class": "DebertaV2TokenizerFast",
+  "tokenizer_unk_fraction": 0.000148906457639305,
+  "input": "response",
+  "fold": 2,
+  "seed": 44,
+  "n_splits": 5,
+  "split_protocol": "prompt_grouped_v1",
+  "n_classes": 100,
+  "train_per_class": 400,
+  "test_per_class": 100,
+  "train_samples": 40000,
+  "test_samples": 10000,
+  "max_length": 256,
+  "epochs": 2,
+  "learning_rate": 6e-06,
+  "precision": "fp32",
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.06,
+  "train_batch_size": 32,
+  "gradient_accumulation_steps": 1,
+  "effective_train_batch_size": 32,
+  "metrics": {
+    "K1": {
+      "n_fingerprints": 10000,
+      "accuracy": 0.3319,
+      "macro_f1": 0.2971911743889308,
+      "nll": 2.3079973107231067,
+      "ece": 0.12228576771169904
+    },
+    "K5": {
+      "n_fingerprints": 2000,
+      "accuracy": 0.472,
+      "macro_f1": 0.4222583384351442,
+      "nll": 2.142342501853591,
+      "ece": 0.2910133109614252
+    },
+    "K10": {
+      "n_fingerprints": 1000,
+      "accuracy": 0.508,
+      "macro_f1": 0.44690294155196114,
+      "nll": 2.1256665836871322,
+      "ece": 0.3323052159696817
+    },
+    "K20": {
+      "n_fingerprints": 500,
+      "accuracy": 0.51,
+      "macro_f1": 0.4391854723866919,
+      "nll": 2.116970699005915,
+      "ece": 0.33463523495197295
+    },
+    "K50": {
+      "n_fingerprints": 200,
+      "accuracy": 0.515,
+      "macro_f1": 0.4271800976800976,
+      "nll": 2.1122838088456213,
+      "ece": 0.3416705467551946
+    },
+    "K100": {
+      "n_fingerprints": 100,
+      "accuracy": 0.52,
+      "macro_f1": 0.4230238095238095,
+      "nll": 2.109856776503608,
+      "ece": 0.3509211850911379
+    }
+  },
+  "predictions": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_text_classifier/deberta_v3_large_generalization_v2/fold_2/predictions.npz",
+  "external_panels": true,
+  "complete": true
+}

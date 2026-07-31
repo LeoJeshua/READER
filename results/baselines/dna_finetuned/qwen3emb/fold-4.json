@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "protocol": "supervised_sentence_encoder_no_retraining_v1",
+  "tag": "qwen3emb",
+  "fold": 4,
+  "seed": 46,
+  "split_protocol": "prompt_grouped_v1",
+  "model_path": "$MODEL_CACHE/hub/models--Qwen--Qwen3-Embedding-8B/snapshots/a3d38e32b9c835d5b3d0d0a3ef3c133bbea92539",
+  "transformers_version": "5.5.3",
+  "pooling": "last",
+  "normalize_embeddings": true,
+  "fine_tuning": "lora_encoder_and_linear_head",
+  "lora": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ]
+  },
+  "n_classes": 100,
+  "train_samples": 40000,
+  "test_samples": 10000,
+  "max_length": 256,
+  "epochs": 2,
+  "encoder_learning_rate": 0.0001,
+  "head_learning_rate": 0.001,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.06,
+  "precision": "bf16",
+  "train_batch_size": 2,
+  "gradient_accumulation_steps": 16,
+  "effective_train_batch_size": 32,
+  "tokenizer_unknown_fraction": 0.0,
+  "clean_k1": {
+    "accuracy": 0.5543,
+    "macro_f1": 0.5305840777593444
+  },
+  "source_prompt_variance": {
+    "n_samples": 10000,
+    "n_sources": 100,
+    "n_prompts": 100,
+    "n_dimensions": 4096,
+    "source_variance": 0.7643697651398859,
+    "prompt_variance": 0.005793515581397266,
+    "residual_variance": 0.23023270152346462,
+    "source_prompt_ratio": 131.93539473583965,
+    "source_fraction": 0.7640672080916875,
+    "prompt_fraction": 0.005791222360167254,
+    "residual_fraction": 0.2301415695481452
+  },
+  "predictions": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_sentence_encoder/qwen3emb/fold_4/predictions.npz",
+  "checkpoint": "$CACHE_ROOT/exp_agent_n500/100-way/finetuned_sentence_encoder/qwen3emb/checkpoints/fold_4",
+  "complete": true
+}

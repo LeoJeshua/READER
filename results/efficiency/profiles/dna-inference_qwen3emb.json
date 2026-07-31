@@ -1,0 +1,28 @@
+{
+  "batch_size": 4,
+  "created_at_unix": 1785401600.3331003,
+  "encoder_parameters": 7567295488,
+  "feature_dim": 4096,
+  "hardware": "NVIDIA H200 140GB",
+  "head_parameters": 409700,
+  "inference_parameters": 7567705188,
+  "input_view": "response_only",
+  "method": "llm_dna_dynamic",
+  "mode": "dna-inference",
+  "n_samples": 256,
+  "protocol": "agent500_compute_cost_v1",
+  "tag": "qwen3emb",
+  "timing": {
+    "median_ms_per_response": 6.1305214039748535,
+    "median_responses_per_second": 163.11826255946661,
+    "median_seconds": 1.5694134794175625,
+    "repeats": 3,
+    "seconds": [
+      1.7392496019601822,
+      1.5694134794175625,
+      1.5670970603823662
+    ]
+  },
+  "timing_scope": "tokenization + frozen sentence encoder + pooling + scaler + 100-way linear score; excludes model loading and disk I/O",
+  "trainable_parameters": 409700
+}

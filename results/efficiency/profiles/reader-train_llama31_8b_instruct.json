@@ -1,0 +1,24 @@
+{
+  "created_at_unix": 1785401011.3666222,
+  "feature_dim": 8192,
+  "final_objectives": [
+    0.37689754366874695,
+    0.37689754366874695,
+    0.37689754366874695
+  ],
+  "hardware": "NVIDIA H200 140GB",
+  "median_seconds": 0.547404732555151,
+  "method": "reader",
+  "mode": "reader-train",
+  "n_train": 40000,
+  "protocol": "agent500_compute_cost_v1",
+  "repeats": 3,
+  "seconds": [
+    1.6695509068667889,
+    0.5269848555326462,
+    0.547404732555151
+  ],
+  "tag": "llama31_8b_instruct",
+  "trainable_parameters": 819300,
+  "training_scope": "one outer fold; feature archive already available; includes fold-local standardization and 40 full-batch Adam steps"
+}

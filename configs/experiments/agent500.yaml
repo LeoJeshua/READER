@@ -1,0 +1,29 @@
+schema_version: 1
+dataset:
+  benchmark: agent500
+  variant: 100-way
+  responses_per_source: 500
+proxy_input:
+  view: prompt_response
+representation:
+  name: all_response_tokens_dc_ac
+  dct_modes: [0, 1]
+  projection: null
+evaluation:
+  split_protocol: prompt_grouped_v1
+  split_seed: 42
+  folds: 5
+  grouping_seeds: [42, 43, 44]
+  query_budgets: [1, 5, 10, 20, 50, 100]
+probe:
+  implementation: torch_linear
+  optimizer: adam
+  learning_rate: 0.001
+  steps: 40
+  schedule: cosine
+  schedule_horizon: 100
+  eta_min_ratio: 0.01
+  c_value: 1.0
+  standardization: fold_local
+evidence:
+  rule: prior_corrected_log_posterior_sum

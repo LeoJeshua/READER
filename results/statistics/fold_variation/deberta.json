@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "method": "finetuned_deberta_v3_large",
+  "protocol": "agent500_fold_models_to_math100_no_retraining",
+  "std_protocol": "population std across five Agent500 outer-fold models",
+  "fold_summary": {
+    "100": {
+      "accuracy_mean": 0.23200000000000004,
+      "accuracy_std_across_folds": 0.018330302779823344,
+      "macro_f1_mean": 0.15071767676767675,
+      "macro_f1_std_across_folds": 0.015666819302168598,
+      "per_fold": [
+        {
+          "fold": 0,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_text_classifier/deberta_v3_large_generalization_v2/fold_0/predictions.npz",
+          "metrics": {
+            "100": {
+              "accuracy": 0.23,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.15509523809523806,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.23,
+                  "macro_f1": 0.15509523809523806,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.23,
+                  "macro_f1": 0.15509523809523806,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.23,
+                  "macro_f1": 0.15509523809523806,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_text_classifier/deberta_v3_large_generalization_v2/fold_1/predictions.npz",
+          "metrics": {
+            "100": {
+              "accuracy": 0.20000000000000004,
+              "accuracy_grouping_std": 2.7755575615628914e-17,
+              "macro_f1": 0.1305,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.2,
+                  "macro_f1": 0.1305,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.2,
+                  "macro_f1": 0.1305,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.2,
+                  "macro_f1": 0.1305,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_text_classifier/deberta_v3_large_generalization_v2/fold_2/predictions.npz",
+          "metrics": {
+            "100": {
+              "accuracy": 0.25,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.1745833333333333,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.25,
+                  "macro_f1": 0.1745833333333333,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.25,
+                  "macro_f1": 0.1745833333333333,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.25,
+                  "macro_f1": 0.1745833333333333,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_text_classifier/deberta_v3_large_generalization_v2/fold_3/predictions.npz",
+          "metrics": {
+            "100": {
+              "accuracy": 0.25,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.15664357864357864,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.25,
+                  "macro_f1": 0.15664357864357864,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.25,
+                  "macro_f1": 0.15664357864357864,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.25,
+                  "macro_f1": 0.15664357864357864,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_text_classifier/deberta_v3_large_generalization_v2/fold_4/predictions.npz",
+          "metrics": {
+            "100": {
+              "accuracy": 0.23,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.13676623376623376,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.23,
+                  "macro_f1": 0.13676623376623376,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.23,
+                  "macro_f1": 0.13676623376623376,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.23,
+                  "macro_f1": 0.13676623376623376,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "fold_logposterior_ensemble": {
+    "100": {
+      "accuracy": 0.27,
+      "accuracy_grouping_std": 0.0,
+      "macro_f1": 0.187984126984127,
+      "macro_f1_grouping_std": 2.7755575615628914e-17,
+      "n_fingerprints": 100,
+      "by_grouping_seed": {
+        "42": {
+          "accuracy": 0.27,
+          "macro_f1": 0.18798412698412698,
+          "n_fingerprints": 100
+        },
+        "43": {
+          "accuracy": 0.27,
+          "macro_f1": 0.18798412698412698,
+          "n_fingerprints": 100
+        },
+        "44": {
+          "accuracy": 0.27,
+          "macro_f1": 0.18798412698412698,
+          "n_fingerprints": 100
+        }
+      }
+    }
+  }
+}

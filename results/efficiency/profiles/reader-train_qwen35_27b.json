@@ -1,0 +1,24 @@
+{
+  "created_at_unix": 1785425856.1601832,
+  "feature_dim": 10240,
+  "final_objectives": [
+    0.23757247626781464,
+    0.23757247626781464,
+    0.23757247626781464
+  ],
+  "hardware": "NVIDIA H200 140GB",
+  "median_seconds": 0.4245380088686943,
+  "method": "reader",
+  "mode": "reader-train",
+  "n_train": 40000,
+  "protocol": "agent500_compute_cost_v1",
+  "repeats": 3,
+  "seconds": [
+    2.6439473144710064,
+    0.42418474331498146,
+    0.4245380088686943
+  ],
+  "tag": "qwen35_27b",
+  "trainable_parameters": 1024100,
+  "training_scope": "one outer fold; feature archive already available; includes fold-local standardization and 40 full-batch Adam steps"
+}

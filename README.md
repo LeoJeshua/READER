@@ -1,105 +1,163 @@
-# READER: Robust Evidence-based Authorship Decoding via Extracted Representations
+# READER 🔍
 
-> **Anonymous repository — NeurIPS 2026 submission.**
-> Provided for reviewer reproducibility. Author, institution, and
-> acknowledgement metadata have been removed in accordance with the
-> double-blind review policy.
+**Dynamic LLM Provenance from Query-Varying Interactions**
 
-## Overview
+[📄 Preprint](https://arxiv.org/abs/2606.10794) · [🌐 READER Atlas](https://github.com/LeoJeshua/READER-Atlas) · [📊 Released results](results/) · [🧪 Reproduction guide](docs/REPRODUCING.md)
 
-This repository ships the **library** and **probe / target / MMLU-Pro
-data** needed to reproduce the main results in the paper.
+READER identifies which enrolled language model produced a black-box response when prompts vary across interactions. A frozen proxy LLM reads each prompt-response pair, converts its response-token activation trajectory into a compact frequency-domain fingerprint, and produces source evidence through a lightweight linear probe. Bayesian evidence accumulation then combines multiple interactions across flexible query budgets.
 
-## Method at a glance
+<p align="center">
+  <a href="https://github.com/LeoJeshua/READER-Atlas">
+    <img src="results/paper_figures/app.png" width="92%" alt="READER Atlas: interactive model-signature visualization">
+  </a>
+</p>
 
-**Provenance setting.** READER targets dynamic black-box auditing: the auditor sees query-varying prompts and generated responses, but has no access to target-model internals.
+## ✨ Highlights
 
-**READER pipeline.** A frozen proxy LLM reads each black-box response,Spectral Trajectory Encoding aggregates selected hidden states within a response, and Bayesian Evidence Accumulation combines per-response posteriors across prompts for final source-model attribution.
+- **Dynamic provenance.** Attribution operates on naturally varying queries instead of requiring a fixed diagnostic prompt set at inference time.
+- **Temporal fingerprints.** Length-normalized DCT-II coefficients capture complementary DC and AC evidence over the complete response-token trajectory.
+- **Lightweight enrollment.** The proxy remains frozen; only a linear source probe is trained for the enrolled ecosystem.
+- **Budget-adaptive decisions.** Per-response source evidence is accumulated for any available query budget `K`.
+- **Broader diagnostics.** The release includes no-retraining length and Math100 stress tests, static relationship analysis, layer scans, component ablations, and source-geometry visualizations.
 
+## 🧠 Method at a Glance
 
-## Repository layout
+1. **Read the interaction.** A frozen proxy processes the prompt and generated response, exposing hidden states at a selected layer.
+2. **Extract a source fingerprint.** An orthonormal DCT-II summarizes the full response-token trajectory using its DC–AC representation.
+3. **Decode response evidence.** A fold-local linear probe maps each fingerprint to evidence over candidate sources.
+4. **Accumulate across queries.** Bayesian evidence accumulation combines response-level predictions as the query budget grows.
 
-```log
-src/provenance_tracker/   Python library (importable as `provenance_tracker`)
-data/agent/               500-prompt agentic probe + 50-target registry
-data/mmlu_pro/            Local copy of TIGER-Lab/MMLU-Pro (CC-BY-4.0)
-```
+The canonical pipeline uses all response tokens and the full-rank DC–AC fingerprint. It does not require PCA, GRP, or SVD.
 
-### `src/provenance_tracker/`
+## 📦 Release
 
-| Sub-package | Purpose |
-| --- | --- |
-| `config.py` | Local HF-cache root, target / proxy registry, experiment constants |
-| `datasets/` | `ProbeSample` / `ResponseRecord` / `FeatureBatch` schemas and JSONL loaders |
-| `collectors/` | Run a target model locally and dump `(prompt, response)` pairs |
-| `proxy/` | Multi-layer last-token activation extractor (the proxy reader) |
-| `baselines/` | Sentence-encoder baseline (`all-mpnet-base-v2`) |
-| `analysis/` | Layer-wise linear probes, top-neuron selection, CKA, SAE, activation / attribution patching |
-| `classifiers/` | Scaler + logistic-regression provenance classifier |
-| `evaluation/` | Multi-trajectory aggregators (mean-pool, log-posterior, gaussian-disc), few-shot, calibration, retrieval and clustering metrics |
-| `pipelines/` | End-to-end CLI entry points (record collection, feature extraction, intra-/cross-K evaluation) |
-| `utils/` | JSONL and `.npz` I/O helpers |
+| Component | Scope |
+|---|---|
+| **Agent500** | Dynamic provenance with 500 query-varying prompts per source |
+| **Source rosters** | Nested 50-way, 100-way, and 165-way candidate ecosystems |
+| **Query budgets** | `K ∈ {1, 5, 10, 20, 50, 100}` |
+| **Stress tests** | Controlled response length and no-retraining Math100 transfer |
+| **Bench-A** | Pairwise relationship classification with pair-, model-, and family-disjoint protocols |
+| **Public data** | 139,200 prompt-response records with checksums and roster metadata |
+| **Artifacts** | Compact reports, tables, figures, and regression-tested paper values |
 
-The fingerprint reported in the paper is **intra-sample mean-pool +
-cross-sample log-posterior**, implemented in
-`evaluation/logposterior_metrics.py` and `evaluation/multi_traj.py`.
+The repository also provides an official-style MMLU-Pro evaluator for OpenAI-compatible APIs. Public files contain no credentials, private endpoints, model weights, cluster paths, or scheduler commands.
 
-### `data/agent/`
+## 🚀 Quick Start
 
-- `agent_probe.json` — 500 agentic, coding, and reasoning prompts.
-- `agent_probe_classfied.json` — the same prompts annotated by topic.
-- `n500_targets.json` — registry of 50 candidate target models (label, repo id, family).
-
-### `data/mmlu_pro/`
-
-`test.json` and `validation.json` are an unmodified copy of
-[`TIGER-Lab/MMLU-Pro`](https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro),
-redistributed under CC-BY-4.0 for offline reproducibility. Please cite
-the original dataset when used downstream.
-
-## Installation
+READER requires Python 3.10 or newer.
 
 ```bash
-pip install -e .
-export PYTHONPATH=./src
+python -m venv .venv
+source .venv/bin/activate
+pip install -e '.[plots,dev]'
 ```
 
-Runtime requirements: `torch>=2.4`, `transformers>=4.40`, `numpy`,
-`scikit-learn`. Target and proxy weights are resolved from a local
-HuggingFace hub directory; the cache root is pinned in
-`provenance_tracker.config` and can be overridden via environment
-variables.
-
-## Quickstart
-
-```python
-from pathlib import Path
-from provenance_tracker.datasets.loaders import load_probe
-from provenance_tracker.proxy.hidden_states import extract_layerwise
-
-probes = load_probe(Path("data/agent/agent_probe.json"))[:8]
-# extract_layerwise runs the proxy decoder over (prompt, response) pairs
-# and returns last-token hidden states for every layer.
-```
-
-Each end-to-end pipeline — record collection, feature extraction,
-intra-M / cross-K evaluation, log-posterior metrics, multi-trajectory
-aggregation — is exposed as a CLI module under
-`src/provenance_tracker/pipelines/`. Run
+Install the additional sentence-encoder dependencies used by DNA baselines with:
 
 ```bash
-python -m provenance_tracker.pipelines.<name> --help
+pip install -e '.[baselines,plots,dev]'
 ```
 
-for the full argument list of any pipeline.
+Proxy feature extraction requires CUDA and access to the selected Hugging Face checkpoint. Once fingerprints have been extracted, evaluation supports either CPU or CUDA.
 
-## Citation
+### Validate the release
 
-TBD
+```bash
+reader-data --data-root data validate --full
+PYTHONPATH=src python tools/validate_release.py --full-data
+pytest
+```
 
-## License
+The full validator checks all 139,200 records, nested rosters, result checksums, paper endpoints, symlinks, and public-release boundaries.
 
-Code under `src/`: MIT (see `LICENSE`).
-Data under `data/mmlu_pro/`: CC-BY-4.0, retained from the upstream
-`TIGER-Lab/MMLU-Pro` release.
-Data under `data/agent/`: released under MIT alongside the code.
+## 🧪 Reproduce the Experiments
+
+### Dynamic provenance on Agent500
+
+Run the canonical Qwen3.5-9B proxy on the 100-way task:
+
+```bash
+python workflows/agent500.py \
+  --proxy-tag qwen35_9b \
+  --variant 100-way \
+  --stage all \
+  --device cuda \
+  --early-exit
+```
+
+Outputs are written to `outputs/agent500/100-way/qwen35_9b/`, including the fingerprint archive, fold-local probes, out-of-fold response evidence, and query-budget report. Use `--stage evaluate --device cpu` to evaluate an existing fingerprint archive without another proxy forward pass. The same workflow accepts `50-way` and `165-way`.
+
+### No-retraining stress tests
+
+```bash
+python workflows/stress_tests.py \
+  --proxy-tag qwen35_9b \
+  --variant 100-way \
+  --condition all \
+  --stage all \
+  --device cuda \
+  --early-exit
+```
+
+### Static relationship evaluation
+
+```bash
+python workflows/bench_a.py \
+  --proxy-tag qwen35_9b \
+  --stage all \
+  --device cuda \
+  --early-exit
+```
+
+Task-specific readout layers are recorded as `layer` and `bench_a_layer` in [`configs/proxies.yaml`](configs/proxies.yaml). Both evaluations use the same DC–AC fingerprint construction.
+
+## 📈 Analyses and Paper Artifacts
+
+```bash
+python workflows/input_ablation.py --proxy-tag qwen35_9b --stage all
+python workflows/layer_scan.py --proxy-tag qwen35_9b --stage all
+
+MPLCONFIGDIR=.cache/matplotlib reader-report \
+  --results results \
+  --proxy-config configs/proxies.yaml \
+  --capabilities configs/capabilities.yaml \
+  --output-dir outputs/paper
+```
+
+`reader-report` regenerates the attribution, stress-test, component, layer, variance, and capability figures together with machine-readable tables. Dedicated commands expose out-of-fold confusion matrices (`reader-confusion`), source geometry (`reader-geometry`), and bootstrap, sign-flip, and Holm-corrected statistics (`reader-statistics`).
+
+Protocol definitions and complete commands are documented in [`docs/PROTOCOL.md`](docs/PROTOCOL.md) and [`docs/REPRODUCING.md`](docs/REPRODUCING.md). Released paper artifacts are indexed by [`results/paper_map.json`](results/paper_map.json).
+
+## 🗂️ Repository Structure
+
+```text
+configs/                  Model rosters and experiment definitions
+data/                     Prompts, responses, splits, and checksums
+results/                  Compact reports and paper figures
+src/reader_provenance/    Numerical core and experiment entry points
+workflows/                End-to-end experiment orchestration
+tests/                    Unit, integration, and paper-value tests
+tools/                    Release validation utilities
+mmlu_pro_api/             OpenAI-compatible MMLU-Pro evaluation
+```
+
+The independent [READER Atlas](https://github.com/LeoJeshua/READER-Atlas) provides an interactive view of model-signature geometry across readers and attribution methods.
+
+## 📄 Data and License
+
+Code is released under the [MIT License](LICENSE). Prompt and response data are provided for research reproduction and remain subject to the applicable model and provider terms. See [`data/README.md`](data/README.md) for schemas, counts, checksums, and retained Bench-A empty-response cases.
+
+## 📝 Citation
+
+```bibtex
+@misc{liu2026reader,
+  title         = {READER: Dynamic LLM Provenance from Query-Varying Interactions},
+  author        = {Liu, Jiaxu and Mu, Sunnan and Huang, Dong and Wang, Liuyin and Shao, Jing and Zhang, Jie},
+  year          = {2026},
+  eprint        = {2606.10794},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  doi           = {10.48550/arXiv.2606.10794}
+}
+```

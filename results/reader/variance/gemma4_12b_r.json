@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "protocol": "dct_alltokens_component_source_prompt_variance_v1",
+  "method_tag": "gemma4_12b_r",
+  "source": "$CACHE_ROOT/exp_agent_n500/100-way/dct_alltokens_fullrank_best_layer_v2/features_agent500_r/gemma4_12b_L5_r_alltokens_dctq2.npz",
+  "split_protocol": "prompt_grouped_v1",
+  "split_seed": 42,
+  "n_splits": 5,
+  "n_samples": 50000,
+  "n_classes": 100,
+  "n_prompt_ids": 500,
+  "preprocessing": "fold-local StandardScaler fitted on outer-training prompts",
+  "fit_scope": "outer-training prompts only",
+  "representations": [
+    "dct_dc_fullrank",
+    "dct_ac_fullrank",
+    "dct_dc_ac_fullrank"
+  ],
+  "summary": {
+    "dct_dc_fullrank": {
+      "n_folds": 5,
+      "n_dimensions": 3840,
+      "source_variance_mean": 0.20591691453868793,
+      "source_variance_std": 0.004470431081536025,
+      "prompt_variance_mean": 0.2041625198915892,
+      "prompt_variance_std": 0.01723042832562479,
+      "residual_variance_mean": 0.5890384807044082,
+      "residual_variance_std": 0.014014767024855563,
+      "source_prompt_ratio_pooled": 1.0085931279062892,
+      "source_prompt_ratio_fold_mean": 1.0173113521428636,
+      "source_prompt_ratio_fold_std": 0.10350096523403238,
+      "source_prompt_ratio_fold_min": 0.8810545353414077,
+      "source_prompt_ratio_fold_max": 1.117329966945809
+    },
+    "dct_ac_fullrank": {
+      "n_folds": 5,
+      "n_dimensions": 3840,
+      "source_variance_mean": 0.1209987248064445,
+      "source_variance_std": 0.004965229193934905,
+      "prompt_variance_mean": 0.09523046864651272,
+      "prompt_variance_std": 0.006299744546363337,
+      "residual_variance_mean": 0.7833617625901506,
+      "residual_variance_std": 0.012442015256271238,
+      "source_prompt_ratio_pooled": 1.2705883581816793,
+      "source_prompt_ratio_fold_mean": 1.2788548847101666,
+      "source_prompt_ratio_fold_std": 0.12739198884904843,
+      "source_prompt_ratio_fold_min": 1.0805503396152603,
+      "source_prompt_ratio_fold_max": 1.4199837484381388
+    },
+    "dct_dc_ac_fullrank": {
+      "n_folds": 5,
+      "n_dimensions": 7680,
+      "source_variance_mean": 0.16345781967256628,
+      "source_variance_std": 0.0045817252708452135,
+      "prompt_variance_mean": 0.14969649426905093,
+      "prompt_variance_std": 0.011556713578425984,
+      "residual_variance_mean": 0.6862001216472796,
+      "residual_variance_std": 0.01274105731120141,
+      "source_prompt_ratio_pooled": 1.0919281742081546,
+      "source_prompt_ratio_fold_mean": 1.100516219640056,
+      "source_prompt_ratio_fold_std": 0.11136482926419167,
+      "source_prompt_ratio_fold_min": 0.9439364837129302,
+      "source_prompt_ratio_fold_max": 1.2124741251838098
+    }
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "metrics": {
+        "dct_dc_fullrank": {
+          "n_samples": 10000,
+          "n_sources": 100,
+          "n_prompts": 100,
+          "n_dimensions": 3840,
+          "source_variance": 0.19935380540980838,
+          "prompt_variance": 0.2262672711088866,
+          "residual_variance": 0.6078674163876326,
+          "source_prompt_ratio": 0.8810545353414077,
+          "source_fraction": 0.1928940735945642,
+          "prompt_fraction": 0.21893545275244278,
+          "residual_fraction": 0.588170473652993
+        },
+        "dct_ac_fullrank": {
+          "n_samples": 10000,
+          "n_sources": 100,
+          "n_prompts": 100,
+          "n_dimensions": 3840,
+          "source_variance": 0.11253768667279573,
+          "prompt_variance": 0.10414849040060993,
+          "residual_variance": 0.7965788436196086,
+          "source_prompt_ratio": 1.0805503396152603,
+          "source_fraction": 0.11106441491074716,
+          "prompt_fraction": 0.10278504465631157,
+          "residual_fraction": 0.7861505404329413
+        },
+        "dct_dc_ac_fullrank": {
+          "n_samples": 10000,
+          "n_sources": 100,
+          "n_prompts": 100,
+          "n_dimensions": 7680,
+          "source_variance": 0.15594574604130212,
+          "prompt_variance": 0.16520788075474824,
+          "residual_variance": 0.7022231300036231,
+          "source_prompt_ratio": 0.9439364837129302,
+          "source_fraction": 0.15238351370122877,
+          "prompt_fraction": 0.16143407562957554,
+          "residual_fraction": 0.6861824106691956
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "metrics": {
+        "dct_dc_fullrank": {
+          "n_samples": 10000,
+          "n_sources": 100,
+          "n_prompts": 100,
+          "n_dimensions": 3840,
+          "source_variance": 0.20745918430556615,
+          "prompt_variance": 0.19017053412678755,
+          "residual_variance": 0.5753930694048413,
+          "source_prompt_ratio": 1.0909112984204596,
+          "source_fraction": 0.21321102331703867,
+          "prompt_fraction": 0.19544304255144193,
+          "residual_fraction": 0.5913459341315194
+        },
+        "dct_ac_fullrank": {
+          "n_samples": 10000,
+          "n_sources": 100,
+          "n_prompts": 100,
+          "n_dimensions": 3840,
+          "source_variance": 0.1259199266393184,
+          "prompt_variance": 0.0945345461036022,
+          "residual_variance": 0.7819116785484158,
+          "source_prompt_ratio": 1.331999060971006,
+          "source_fraction": 0.1256226843624929,
+          "prompt_fraction": 0.09431139108380152,
+          "residual_fraction": 0.7800659245537055
+        },
+        "dct_dc_ac_fullrank": {
+          "n_samples": 10000,
+          "n_sources": 100,
+          "n_prompts": 100,
+          "n_dimensions": 7680,
+          "source_variance": 0.1666895554724423,
+          "prompt_variance": 0.14235254011519488,
+          "residual_variance": 0.6786523739766306,
+          "source_prompt_ratio": 1.1709629862421378,
+          "source_fraction": 0.16876631449194934,
+          "prompt_fraction": 0.14412608807862948,
+          "residual_fraction": 0.6871075974294212
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "metrics": {
+        "dct_dc_fullrank": {
+          "n_samples": 10000,
+          "n_sources": 100,
+          "n_prompts": 100,
+          "n_dimensions": 3840,
+          "source_variance": 0.20968751748167824,
+          "prompt_variance": 0.19135839987820794,
+          "residual_variance": 0.5793063357758876,
+          "source_prompt_ratio": 1.0957842332248602,
+          "source_fraction": 0.21388997353855993,
+          "prompt_fraction": 0.19519351260337825,
+          "residual_fraction": 0.5909165138580619
+        },
+        "dct_ac_fullrank": {
+          "n_samples": 10000,
+          "n_sources": 100,
+          "n_prompts": 100,
+          "n_dimensions": 3840,
+          "source_variance": 0.12514506527026287,
+          "prompt_variance": 0.09078247389653589,
+          "residual_variance": 0.7769946730094375,
+          "source_prompt_ratio": 1.3785156969052172,
+          "source_fraction": 0.12603712932957387,
+          "prompt_fraction": 0.09142959315771927,
+          "residual_fraction": 0.7825332775127068
+        },
+        "dct_dc_ac_fullrank": {
+          "n_samples": 10000,
+          "n_sources": 100,
+          "n_prompts": 100,
+          "n_dimensions": 7680,
+          "source_variance": 0.16741629137597058,
+          "prompt_variance": 0.1410704368873719,
+          "residual_variance": 0.6781505043926627,
+          "source_prompt_ratio": 1.186756737059181,
+          "source_fraction": 0.16968373565762335,
+          "prompt_fraction": 0.14298105952034007,
+          "residual_fraction": 0.6873352048220366
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "metrics": {
+        "dct_dc_fullrank": {
+          "n_samples": 10000,
+          "n_sources": 100,
+          "n_prompts": 100,
+          "n_dimensions": 3840,
+          "source_variance": 0.2109845422134062,
+          "prompt_variance": 0.18882921648483725,
+          "residual_variance": 0.5783458563744126,
+          "source_prompt_ratio": 1.117329966945809,
+          "source_fraction": 0.21569541306173698,
+          "prompt_fraction": 0.19304540238129878,
+          "residual_fraction": 0.5912591845569642
+        },
+        "dct_ac_fullrank": {
+          "n_samples": 10000,
+          "n_sources": 100,
+          "n_prompts": 100,
+          "n_dimensions": 3840,
+          "source_variance": 0.12294091790024822,
+          "prompt_variance": 0.08657910207456442,
+          "residual_variance": 0.7641981304734217,
+          "source_prompt_ratio": 1.4199837484381388,
+          "source_fraction": 0.12625924436517333,
+          "prompt_fraction": 0.08891597844274467,
+          "residual_fraction": 0.784824777192082
+        },
+        "dct_dc_ac_fullrank": {
+          "n_samples": 10000,
+          "n_sources": 100,
+          "n_prompts": 100,
+          "n_dimensions": 7680,
+          "source_variance": 0.16696273005682732,
+          "prompt_variance": 0.13770415927970087,
+          "residual_variance": 0.6712719934239187,
+          "source_prompt_ratio": 1.2124741251838098,
+          "source_fraction": 0.17107908395305718,
+          "prompt_fraction": 0.14109916277769785,
+          "residual_fraction": 0.687821753269245
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "metrics": {
+        "dct_dc_fullrank": {
+          "n_samples": 10000,
+          "n_sources": 100,
+          "n_prompts": 100,
+          "n_dimensions": 3840,
+          "source_variance": 0.20209952328298067,
+          "prompt_variance": 0.22418717785922654,
+          "residual_variance": 0.6042797255792667,
+          "source_prompt_ratio": 0.9014767267817817,
+          "source_fraction": 0.19610528544571063,
+          "prompt_fraction": 0.21753782390566515,
+          "residual_fraction": 0.5863568906486242
+        },
+        "dct_ac_fullrank": {
+          "n_samples": 10000,
+          "n_sources": 100,
+          "n_prompts": 100,
+          "n_dimensions": 3840,
+          "source_variance": 0.11845002754959719,
+          "prompt_variance": 0.10010773075725117,
+          "residual_variance": 0.7971254872998695,
+          "source_prompt_ratio": 1.183225577621211,
+          "source_fraction": 0.11662103127323038,
+          "prompt_fraction": 0.09856195934142033,
+          "residual_fraction": 0.7848170093853493
+        },
+        "dct_dc_ac_fullrank": {
+          "n_samples": 10000,
+          "n_sources": 100,
+          "n_prompts": 100,
+          "n_dimensions": 7680,
+          "source_variance": 0.16027477541628893,
+          "prompt_variance": 0.1621474543082389,
+          "residual_variance": 0.7007026064395634,
+          "source_prompt_ratio": 0.9884507660022214,
+          "source_fraction": 0.15665221852808553,
+          "prompt_fraction": 0.15848257082309095,
+          "residual_fraction": 0.6848652106488236
+        }
+      }
+    }
+  ],
+  "complete": true
+}

@@ -1,0 +1,28 @@
+{
+  "batch_size": 32,
+  "created_at_unix": 1785401550.8294306,
+  "encoder_parameters": 109486464,
+  "feature_dim": 768,
+  "hardware": "NVIDIA H200 140GB",
+  "head_parameters": 76900,
+  "inference_parameters": 109563364,
+  "input_view": "response_only",
+  "method": "llm_dna_dynamic",
+  "mode": "dna-inference",
+  "n_samples": 256,
+  "protocol": "agent500_compute_cost_v1",
+  "tag": "mpnet",
+  "timing": {
+    "median_ms_per_response": 1.0133100731763989,
+    "median_responses_per_second": 986.8647578577048,
+    "median_seconds": 0.2594073787331581,
+    "repeats": 3,
+    "seconds": [
+      0.2718644365668297,
+      0.2594073787331581,
+      0.2591393440961838
+    ]
+  },
+  "timing_scope": "tokenization + frozen sentence encoder + pooling + scaler + 100-way linear score; excludes model loading and disk I/O",
+  "trainable_parameters": 76900
+}

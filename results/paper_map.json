@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "paper": "READER: Dynamic LLM Provenance from Query-Varying Interactions",
+  "results": {
+    "agent500": "reader/agent500",
+    "stress_tests": "reader/stress",
+    "bench_a": "bench_a",
+    "temporal_controls": "ablations/temporal",
+    "layer_selection": "reader/layer_scan",
+    "source_prompt_variance": "reader/variance",
+    "efficiency": "efficiency/profiles",
+    "ecosystem_geometry": "geometry",
+    "rendered_figures": "paper_figures"
+  },
+  "reporting_note": "Math100 endpoint tables use metrics_across_folds; budget curves use the mean-log-posterior fold ensemble. Controlled-length tables use global source grouping after row-level prompt-matched OOF scoring."
+}

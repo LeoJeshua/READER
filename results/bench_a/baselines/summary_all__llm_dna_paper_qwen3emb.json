@@ -1,0 +1,34 @@
+[
+  {
+    "method": "LLM-DNA-paper-fixed-RGP128-euclidean-maxlen1024-pool-cls::Qwen__Qwen3-Embedding-8B-RBF",
+    "n_splits": 20,
+    "svm_kernel": "rbf",
+    "svm_c": 1.0,
+    "accuracy_mean": 0.7270833253860474,
+    "accuracy_std": 0.08066024631261826,
+    "precision_mean": 0.9191666841506958,
+    "precision_std": 0.10024622082710266,
+    "recall_mean": 0.49583330750465393,
+    "recall_std": 0.14547574520111084,
+    "f1_mean": 0.6329586505889893,
+    "f1_std": 0.14267176389694214,
+    "auc_mean": 0.6937500238418579,
+    "auc_std": 0.09424764662981033
+  },
+  {
+    "method": "LLM-DNA-paper-fixed-RGP128-euclidean-maxlen1024-pool-cls::Qwen__Qwen3-Embedding-8B-LINEAR",
+    "n_splits": 20,
+    "svm_kernel": "linear",
+    "svm_c": 1.0,
+    "accuracy_mean": 0.7041667103767395,
+    "accuracy_std": 0.09023503214120865,
+    "precision_mean": 0.8346279859542847,
+    "precision_std": 0.1620497852563858,
+    "recall_mean": 0.5541666746139526,
+    "recall_std": 0.11569536477327347,
+    "f1_mean": 0.6504353284835815,
+    "f1_std": 0.09571249783039093,
+    "auc_mean": 0.7232638597488403,
+    "auc_std": 0.08626987785100937
+  }
+]

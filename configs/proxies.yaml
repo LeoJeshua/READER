@@ -1,0 +1,92 @@
+schema_version: 1
+defaults:
+  view: prompt_response
+  max_length: 1024
+  dtype: bfloat16
+  attention: auto
+  early_exit: false
+models:
+  - tag: llama31_8b_instruct
+    name: Llama-3.1-8B-Instruct
+    model: meta-llama/Llama-3.1-8B-Instruct
+    family: Llama
+    color: "#7f3b08"
+    layer: 2
+    bench_a_layer: 12
+    depth: 32
+    hidden_size: 4096
+    batch_size: 128
+    roles: [main, full]
+  - tag: gemma4_12b
+    name: Gemma-4-12B-it
+    model: google/gemma-4-12b-it
+    family: Gemma
+    color: "#009e73"
+    layer: 5
+    bench_a_layer: 5
+    depth: 48
+    hidden_size: 3840
+    batch_size: 64
+    roles: [main, full]
+  - tag: ministral3_8b
+    name: Ministral-3-8B-Instruct-2512
+    model: mistralai/Ministral-3-8B-Instruct-2512
+    family: Mistral
+    color: "#6a3d9a"
+    layer: 17
+    bench_a_layer: 16
+    depth: 34
+    hidden_size: 4096
+    batch_size: 128
+    roles: [main, full]
+  - tag: qwen35_9b
+    name: Qwen3.5-9B
+    model: Qwen/Qwen3.5-9B
+    family: Qwen
+    color: "#1f78b4"
+    layer: 18
+    bench_a_layer: 18
+    depth: 32
+    hidden_size: 4096
+    batch_size: 4
+    roles: [main, full]
+  - tag: olmo3_7b_instruct
+    name: OLMo-3-7B-Instruct
+    model: allenai/Olmo-3-7B-Instruct
+    family: OLMo
+    color: "#cc79a7"
+    layer: 14
+    depth: 32
+    hidden_size: 4096
+    batch_size: 128
+    roles: [full]
+  - tag: qwen3_8b
+    name: Qwen3-8B
+    model: Qwen/Qwen3-8B
+    family: Qwen
+    color: "#fdae61"
+    layer: 2
+    depth: 36
+    hidden_size: 4096
+    batch_size: 4
+    roles: [full]
+  - tag: qwen3_32b
+    name: Qwen3-32B
+    model: Qwen/Qwen3-32B
+    family: Qwen
+    color: "#d7301f"
+    layer: 48
+    depth: 64
+    hidden_size: 5120
+    batch_size: 2
+    roles: [full]
+  - tag: qwen35_27b
+    name: Qwen3.5-27B
+    model: Qwen/Qwen3.5-27B
+    family: Qwen
+    color: "#74add1"
+    layer: 49
+    depth: 64
+    hidden_size: 5120
+    batch_size: 2
+    roles: [full]

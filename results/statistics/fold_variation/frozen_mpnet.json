@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "method": "frozen_mpnet_linear_probe",
+  "protocol": "agent500_fold_models_to_math100_no_retraining",
+  "std_protocol": "population std across five Agent500 outer-fold models",
+  "train_feature_source": "$CACHE_ROOT/exp_agent_n500/100-way/baseline_features/all_targets_mpnet_response.npz",
+  "math_feature_source": "$CACHE_ROOT/exp_agent_n500/100-way/baseline_features_math/all_targets_mpnet_math_response.npz",
+  "fold_summary": {
+    "100": {
+      "accuracy_mean": 0.046,
+      "accuracy_std_across_folds": 0.008,
+      "macro_f1_mean": 0.01822105099123347,
+      "macro_f1_std_across_folds": 0.003921504861455096,
+      "per_fold": [
+        {
+          "fold": 0,
+          "head_source": "$CACHE_ROOT/exp_agent_n500/100-way/lr_heads/prompt_grouped_v1/fullrank/baseline/clean/mpnet_logposterior_flat_prompt_grouped_v1_fold0.joblib",
+          "metrics": {
+            "100": {
+              "accuracy": 0.05000000000000001,
+              "accuracy_grouping_std": 6.938893903907228e-18,
+              "macro_f1": 0.017394538606403012,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.05,
+                  "macro_f1": 0.017394538606403012,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.05,
+                  "macro_f1": 0.017394538606403012,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.05,
+                  "macro_f1": 0.017394538606403012,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "head_source": "$CACHE_ROOT/exp_agent_n500/100-way/lr_heads/prompt_grouped_v1/fullrank/baseline/clean/mpnet_logposterior_flat_prompt_grouped_v1_fold1.joblib",
+          "metrics": {
+            "100": {
+              "accuracy": 0.04,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.015598106712564543,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.04,
+                  "macro_f1": 0.015598106712564543,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.04,
+                  "macro_f1": 0.015598106712564543,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.04,
+                  "macro_f1": 0.015598106712564543,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "head_source": "$CACHE_ROOT/exp_agent_n500/100-way/lr_heads/prompt_grouped_v1/fullrank/baseline/clean/mpnet_logposterior_flat_prompt_grouped_v1_fold2.joblib",
+          "metrics": {
+            "100": {
+              "accuracy": 0.04,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.01718501170960187,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.04,
+                  "macro_f1": 0.01718501170960187,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.04,
+                  "macro_f1": 0.01718501170960187,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.04,
+                  "macro_f1": 0.01718501170960187,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "head_source": "$CACHE_ROOT/exp_agent_n500/100-way/lr_heads/prompt_grouped_v1/fullrank/baseline/clean/mpnet_logposterior_flat_prompt_grouped_v1_fold3.joblib",
+          "metrics": {
+            "100": {
+              "accuracy": 0.06,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.025858000858000857,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.06,
+                  "macro_f1": 0.025858000858000857,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.06,
+                  "macro_f1": 0.025858000858000857,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.06,
+                  "macro_f1": 0.025858000858000857,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "head_source": "$CACHE_ROOT/exp_agent_n500/100-way/lr_heads/prompt_grouped_v1/fullrank/baseline/clean/mpnet_logposterior_flat_prompt_grouped_v1_fold4.joblib",
+          "metrics": {
+            "100": {
+              "accuracy": 0.04,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.01506959706959707,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.04,
+                  "macro_f1": 0.01506959706959707,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.04,
+                  "macro_f1": 0.01506959706959707,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.04,
+                  "macro_f1": 0.01506959706959707,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "fold_logposterior_ensemble": {
+    "100": {
+      "accuracy": 0.05000000000000001,
+      "accuracy_grouping_std": 6.938893903907228e-18,
+      "macro_f1": 0.017269841269841272,
+      "macro_f1_grouping_std": 0.0,
+      "n_fingerprints": 100,
+      "by_grouping_seed": {
+        "42": {
+          "accuracy": 0.05,
+          "macro_f1": 0.017269841269841272,
+          "n_fingerprints": 100
+        },
+        "43": {
+          "accuracy": 0.05,
+          "macro_f1": 0.017269841269841272,
+          "n_fingerprints": 100
+        },
+        "44": {
+          "accuracy": 0.05,
+          "macro_f1": 0.017269841269841272,
+          "n_fingerprints": 100
+        }
+      }
+    }
+  }
+}

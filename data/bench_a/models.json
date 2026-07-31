@@ -1,0 +1,404 @@
+[
+  {
+    "model": "BAAI/Aquila-VL-2B-llava-qwen",
+    "parent_family": "Qwen/Qwen2.5-1.5B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/BAAI__Aquila-VL-2B-llava-qwen.jsonl.gz"
+  },
+  {
+    "model": "FreedomIntelligence/Apollo2-1.5B",
+    "parent_family": "Qwen/Qwen2-1.5B",
+    "is_parent": false,
+    "response_path": "bench_a/responses/FreedomIntelligence__Apollo2-1.5B.jsonl.gz"
+  },
+  {
+    "model": "Hjgugugjhuhjggg/mergekit-passthrough-owrmdht",
+    "parent_family": "meta-llama/Llama-3.2-1B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/Hjgugugjhuhjggg__mergekit-passthrough-owrmdht.jsonl.gz"
+  },
+  {
+    "model": "Isotonic/OrcaAgent-llama3.2-1b",
+    "parent_family": "meta-llama/Llama-3.2-1B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/Isotonic__OrcaAgent-llama3.2-1b.jsonl.gz"
+  },
+  {
+    "model": "JetBrains/deepseek-coder-1.3B-kexer",
+    "parent_family": "deepseek-ai/deepseek-coder-1.3b-base",
+    "is_parent": false,
+    "response_path": "bench_a/responses/JetBrains__deepseek-coder-1.3B-kexer.jsonl.gz"
+  },
+  {
+    "model": "KartikGPT/Gemma-2b-finetune",
+    "parent_family": "google/gemma-2b",
+    "is_parent": false,
+    "response_path": "bench_a/responses/KartikGPT__Gemma-2b-finetune.jsonl.gz"
+  },
+  {
+    "model": "Kukedlc/Qwen2.5-1.5B-Spanish-1.0-DPO",
+    "parent_family": "Qwen/Qwen2.5-1.5B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/Kukedlc__Qwen2.5-1.5B-Spanish-1.0-DPO.jsonl.gz"
+  },
+  {
+    "model": "LenguajeNaturalAI/leniachat-qwen2-1.5B-v0",
+    "parent_family": "Qwen/Qwen2-1.5B",
+    "is_parent": false,
+    "response_path": "bench_a/responses/LenguajeNaturalAI__leniachat-qwen2-1.5B-v0.jsonl.gz"
+  },
+  {
+    "model": "MonsterMMORPG/fixed_sana",
+    "parent_family": "google/gemma-2-2b",
+    "is_parent": false,
+    "response_path": "bench_a/responses/MonsterMMORPG__fixed_sana.jsonl.gz"
+  },
+  {
+    "model": "NexaAIDev/Octopus-v2",
+    "parent_family": "google/gemma-2b",
+    "is_parent": false,
+    "response_path": "bench_a/responses/NexaAIDev__Octopus-v2.jsonl.gz"
+  },
+  {
+    "model": "NicholasCorrado/tinyllama-1.1b-chat-v1.0-ui-math-coding-dpo-2",
+    "parent_family": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "is_parent": false,
+    "response_path": "bench_a/responses/NicholasCorrado__tinyllama-1.1b-chat-v1.0-ui-math-coding-dpo-2.jsonl.gz"
+  },
+  {
+    "model": "Quardo/TR-Qwen2-1.5B-002-241130",
+    "parent_family": "Qwen/Qwen2-1.5B",
+    "is_parent": false,
+    "response_path": "bench_a/responses/Quardo__TR-Qwen2-1.5B-002-241130.jsonl.gz"
+  },
+  {
+    "model": "Qwen/Qwen2-1.5B",
+    "parent_family": "Qwen/Qwen2-1.5B",
+    "is_parent": true,
+    "response_path": "bench_a/responses/Qwen__Qwen2-1.5B.jsonl.gz"
+  },
+  {
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "parent_family": "Qwen/Qwen2.5-1.5B-Instruct",
+    "is_parent": true,
+    "response_path": "bench_a/responses/Qwen__Qwen2.5-1.5B-Instruct.jsonl.gz"
+  },
+  {
+    "model": "SuLLMerica/TeleQnA-Phi2-Phinetune",
+    "parent_family": "microsoft/phi-2",
+    "is_parent": false,
+    "response_path": "bench_a/responses/SuLLMerica__TeleQnA-Phi2-Phinetune.jsonl.gz"
+  },
+  {
+    "model": "Syed-Hasan-8503/Qwen2.5-1.5B-Instruct-WO-Adam-mini",
+    "parent_family": "Qwen/Qwen2.5-1.5B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/Syed-Hasan-8503__Qwen2.5-1.5B-Instruct-WO-Adam-mini.jsonl.gz"
+  },
+  {
+    "model": "TechxGenus/CursorCore-DS-1.3B",
+    "parent_family": "deepseek-ai/deepseek-coder-1.3b-base",
+    "is_parent": false,
+    "response_path": "bench_a/responses/TechxGenus__CursorCore-DS-1.3B.jsonl.gz"
+  },
+  {
+    "model": "TechxGenus/CursorCore-DS-1.3B-LC",
+    "parent_family": "deepseek-ai/deepseek-coder-1.3b-base",
+    "is_parent": false,
+    "response_path": "bench_a/responses/TechxGenus__CursorCore-DS-1.3B-LC.jsonl.gz"
+  },
+  {
+    "model": "TechxGenus/CursorCore-DS-1.3B-SR",
+    "parent_family": "deepseek-ai/deepseek-coder-1.3b-base",
+    "is_parent": false,
+    "response_path": "bench_a/responses/TechxGenus__CursorCore-DS-1.3B-SR.jsonl.gz"
+  },
+  {
+    "model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "parent_family": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "is_parent": true,
+    "response_path": "bench_a/responses/TinyLlama__TinyLlama-1.1B-Chat-v1.0.jsonl.gz"
+  },
+  {
+    "model": "TokenBender/evolvedSeeker_1_3",
+    "parent_family": "deepseek-ai/deepseek-coder-1.3b-base",
+    "is_parent": false,
+    "response_path": "bench_a/responses/TokenBender__evolvedSeeker_1_3.jsonl.gz"
+  },
+  {
+    "model": "Vikhrmodels/Vikhr-Qwen-2.5-1.5B-Instruct",
+    "parent_family": "Qwen/Qwen2.5-1.5B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/Vikhrmodels__Vikhr-Qwen-2.5-1.5B-Instruct.jsonl.gz"
+  },
+  {
+    "model": "deepseek-ai/deepseek-coder-1.3b-base",
+    "parent_family": "deepseek-ai/deepseek-coder-1.3b-base",
+    "is_parent": true,
+    "response_path": "bench_a/responses/deepseek-ai__deepseek-coder-1.3b-base.jsonl.gz"
+  },
+  {
+    "model": "google/gemma-2-2b",
+    "parent_family": "google/gemma-2-2b",
+    "is_parent": true,
+    "response_path": "bench_a/responses/google__gemma-2-2b.jsonl.gz"
+  },
+  {
+    "model": "google/gemma-2b",
+    "parent_family": "google/gemma-2b",
+    "is_parent": true,
+    "response_path": "bench_a/responses/google__gemma-2b.jsonl.gz"
+  },
+  {
+    "model": "harishnair04/Gemma-medtr-2b-sft-v2",
+    "parent_family": "google/gemma-2-2b",
+    "is_parent": false,
+    "response_path": "bench_a/responses/harishnair04__Gemma-medtr-2b-sft-v2.jsonl.gz"
+  },
+  {
+    "model": "hishab/titulm-gemma-2-2b-v1.0",
+    "parent_family": "google/gemma-2-2b",
+    "is_parent": false,
+    "response_path": "bench_a/responses/hishab__titulm-gemma-2-2b-v1.0.jsonl.gz"
+  },
+  {
+    "model": "iqwiki-kor/Llama3.2-3B-MP-RM",
+    "parent_family": "meta-llama/Llama-3.2-3B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/iqwiki-kor__Llama3.2-3B-MP-RM.jsonl.gz"
+  },
+  {
+    "model": "ismail-h/TinayLlama-1.1B-Scam-Conversation",
+    "parent_family": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "is_parent": false,
+    "response_path": "bench_a/responses/ismail-h__TinayLlama-1.1B-Scam-Conversation.jsonl.gz"
+  },
+  {
+    "model": "jaeyong2/Qwen2.5-1.5B-Instruct-Ja-SFT",
+    "parent_family": "Qwen/Qwen2.5-1.5B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/jaeyong2__Qwen2.5-1.5B-Instruct-Ja-SFT.jsonl.gz"
+  },
+  {
+    "model": "jeremierostan/llama32-1b-restorative",
+    "parent_family": "meta-llama/Llama-3.2-1B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/jeremierostan__llama32-1b-restorative.jsonl.gz"
+  },
+  {
+    "model": "jkazdan/gemma-2-2b_hs2_iter1_sftsd1",
+    "parent_family": "google/gemma-2-2b",
+    "is_parent": false,
+    "response_path": "bench_a/responses/jkazdan__gemma-2-2b_hs2_iter1_sftsd1.jsonl.gz"
+  },
+  {
+    "model": "jkazdan/llama3b-real-and-synthetic-sftsd0",
+    "parent_family": "meta-llama/Llama-3.2-3B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/jkazdan__llama3b-real-and-synthetic-sftsd0.jsonl.gz"
+  },
+  {
+    "model": "kykim0/gemma-2b-ultrachat-sft",
+    "parent_family": "google/gemma-2b",
+    "is_parent": false,
+    "response_path": "bench_a/responses/kykim0__gemma-2b-ultrachat-sft.jsonl.gz"
+  },
+  {
+    "model": "lunahr/thea-c-3b-25r",
+    "parent_family": "meta-llama/Llama-3.2-3B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/lunahr__thea-c-3b-25r.jsonl.gz"
+  },
+  {
+    "model": "macadeliccc/Samantha-Qwen2-1.5B",
+    "parent_family": "Qwen/Qwen2-1.5B",
+    "is_parent": false,
+    "response_path": "bench_a/responses/macadeliccc__Samantha-Qwen2-1.5B.jsonl.gz"
+  },
+  {
+    "model": "meta-llama/Llama-3.2-1B-Instruct",
+    "parent_family": "meta-llama/Llama-3.2-1B-Instruct",
+    "is_parent": true,
+    "response_path": "bench_a/responses/meta-llama__Llama-3.2-1B-Instruct.jsonl.gz"
+  },
+  {
+    "model": "meta-llama/Llama-3.2-3B-Instruct",
+    "parent_family": "meta-llama/Llama-3.2-3B-Instruct",
+    "is_parent": true,
+    "response_path": "bench_a/responses/meta-llama__Llama-3.2-3B-Instruct.jsonl.gz"
+  },
+  {
+    "model": "microsoft/phi-2",
+    "parent_family": "microsoft/phi-2",
+    "is_parent": true,
+    "response_path": "bench_a/responses/microsoft__phi-2.jsonl.gz"
+  },
+  {
+    "model": "mlabonne/Gemmalpaca-2B",
+    "parent_family": "google/gemma-2b",
+    "is_parent": false,
+    "response_path": "bench_a/responses/mlabonne__Gemmalpaca-2B.jsonl.gz"
+  },
+  {
+    "model": "nguyenthanhdo/phi-half",
+    "parent_family": "microsoft/phi-2",
+    "is_parent": false,
+    "response_path": "bench_a/responses/nguyenthanhdo__phi-half.jsonl.gz"
+  },
+  {
+    "model": "not-lain/Finetuned_TinyLlama",
+    "parent_family": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "is_parent": false,
+    "response_path": "bench_a/responses/not-lain__Finetuned_TinyLlama.jsonl.gz"
+  },
+  {
+    "model": "not-lain/mayo",
+    "parent_family": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "is_parent": false,
+    "response_path": "bench_a/responses/not-lain__mayo.jsonl.gz"
+  },
+  {
+    "model": "nroggendorff/vegetarian-mayo",
+    "parent_family": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "is_parent": false,
+    "response_path": "bench_a/responses/nroggendorff__vegetarian-mayo.jsonl.gz"
+  },
+  {
+    "model": "omrudra998/fifth",
+    "parent_family": "meta-llama/Llama-3.2-1B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/omrudra998__fifth.jsonl.gz"
+  },
+  {
+    "model": "oxyapi/oxy-1-micro",
+    "parent_family": "Qwen/Qwen2-1.5B",
+    "is_parent": false,
+    "response_path": "bench_a/responses/oxyapi__oxy-1-micro.jsonl.gz"
+  },
+  {
+    "model": "passing2961/Ultron-Summarizer-3B",
+    "parent_family": "meta-llama/Llama-3.2-3B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/passing2961__Ultron-Summarizer-3B.jsonl.gz"
+  },
+  {
+    "model": "phamhai/Llama-3.2-1B-CyberFrog",
+    "parent_family": "meta-llama/Llama-3.2-1B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/phamhai__Llama-3.2-1B-CyberFrog.jsonl.gz"
+  },
+  {
+    "model": "pmking27/PrathameshLLM-2B",
+    "parent_family": "google/gemma-2b",
+    "is_parent": false,
+    "response_path": "bench_a/responses/pmking27__PrathameshLLM-2B.jsonl.gz"
+  },
+  {
+    "model": "prithivMLmods/Llama-Doctor-3.2-3B-Instruct",
+    "parent_family": "meta-llama/Llama-3.2-3B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/prithivMLmods__Llama-Doctor-3.2-3B-Instruct.jsonl.gz"
+  },
+  {
+    "model": "rasyosef/phi-2-instruct-v0.1",
+    "parent_family": "microsoft/phi-2",
+    "is_parent": false,
+    "response_path": "bench_a/responses/rasyosef__phi-2-instruct-v0.1.jsonl.gz"
+  },
+  {
+    "model": "rinna/gemma-2-baku-2b",
+    "parent_family": "google/gemma-2-2b",
+    "is_parent": false,
+    "response_path": "bench_a/responses/rinna__gemma-2-baku-2b.jsonl.gz"
+  },
+  {
+    "model": "rombodawg/rombos_Replete-Coder-Qwen2-1.5b",
+    "parent_family": "Qwen/Qwen2-1.5B",
+    "is_parent": false,
+    "response_path": "bench_a/responses/rombodawg__rombos_Replete-Coder-Qwen2-1.5b.jsonl.gz"
+  },
+  {
+    "model": "rudrashah/RLM-spell-checker",
+    "parent_family": "google/gemma-2-2b",
+    "is_parent": false,
+    "response_path": "bench_a/responses/rudrashah__RLM-spell-checker.jsonl.gz"
+  },
+  {
+    "model": "shellzero/gemma2-2b-ft-law-data-tag-generation",
+    "parent_family": "google/gemma-2-2b",
+    "is_parent": false,
+    "response_path": "bench_a/responses/shellzero__gemma2-2b-ft-law-data-tag-generation.jsonl.gz"
+  },
+  {
+    "model": "stojchet/jd5",
+    "parent_family": "deepseek-ai/deepseek-coder-1.3b-base",
+    "is_parent": false,
+    "response_path": "bench_a/responses/stojchet__jd5.jsonl.gz"
+  },
+  {
+    "model": "stojchet/kto10k1",
+    "parent_family": "deepseek-ai/deepseek-coder-1.3b-base",
+    "is_parent": false,
+    "response_path": "bench_a/responses/stojchet__kto10k1.jsonl.gz"
+  },
+  {
+    "model": "stojchet/nl-all2",
+    "parent_family": "deepseek-ai/deepseek-coder-1.3b-base",
+    "is_parent": false,
+    "response_path": "bench_a/responses/stojchet__nl-all2.jsonl.gz"
+  },
+  {
+    "model": "sunjisen/Qweni",
+    "parent_family": "Qwen/Qwen2.5-1.5B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/sunjisen__Qweni.jsonl.gz"
+  },
+  {
+    "model": "thucdangvan020999/phi2_2.2B_mergkit_prunme",
+    "parent_family": "microsoft/phi-2",
+    "is_parent": false,
+    "response_path": "bench_a/responses/thucdangvan020999__phi2_2.2B_mergkit_prunme.jsonl.gz"
+  },
+  {
+    "model": "torchtorchkimtorch/Llama-3.2-Korean-GGACHI-1B-Instruct-v1",
+    "parent_family": "meta-llama/Llama-3.2-1B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/torchtorchkimtorch__Llama-3.2-Korean-GGACHI-1B-Instruct-v1.jsonl.gz"
+  },
+  {
+    "model": "unsloth/Qwen2.5-1.5B-Instruct",
+    "parent_family": "Qwen/Qwen2.5-1.5B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/unsloth__Qwen2.5-1.5B-Instruct.jsonl.gz"
+  },
+  {
+    "model": "vaishnavi18/zephyr-7b-gemma-sft",
+    "parent_family": "google/gemma-2b",
+    "is_parent": false,
+    "response_path": "bench_a/responses/vaishnavi18__zephyr-7b-gemma-sft.jsonl.gz"
+  },
+  {
+    "model": "win10/Qwen2.5-2B-Instruct",
+    "parent_family": "Qwen/Qwen2.5-1.5B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/win10__Qwen2.5-2B-Instruct.jsonl.gz"
+  },
+  {
+    "model": "winstcha/Qwen2.5-1.5B-FT-v2",
+    "parent_family": "Qwen/Qwen2.5-1.5B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/winstcha__Qwen2.5-1.5B-FT-v2.jsonl.gz"
+  },
+  {
+    "model": "woody72/albertus-deepseek-coder",
+    "parent_family": "deepseek-ai/deepseek-coder-1.3b-base",
+    "is_parent": false,
+    "response_path": "bench_a/responses/woody72__albertus-deepseek-coder.jsonl.gz"
+  },
+  {
+    "model": "wy2001/creativestorywriter",
+    "parent_family": "meta-llama/Llama-3.2-1B-Instruct",
+    "is_parent": false,
+    "response_path": "bench_a/responses/wy2001__creativestorywriter.jsonl.gz"
+  }
+]

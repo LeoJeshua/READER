@@ -1,0 +1,786 @@
+{
+  "schema_version": 1,
+  "method": "reader_qwen35_9b_dct_dc_ac_fullrank",
+  "protocol": "prompt_grouped_v1_torch_adam_fold_model_metrics",
+  "std_protocol": "population std across five Agent500 outer-fold models",
+  "train_feature_source": "$CACHE_ROOT/exp_agent_n500/100-way/dct_alltokens_fullrank_best_layer_v2/features_agent500_ur/qwen35_9b_L18_ur_alltokens_dctq2.npz",
+  "math_feature_source": "$CACHE_ROOT/exp_agent_n500/100-way/dct_alltokens_fullrank_best_layer_v2/features_math100_ur/qwen35_9b_L18_math100_ur_alltokens_dctq2.npz",
+  "classifier": {
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "max_steps": 40,
+    "schedule_horizon": 100,
+    "c_value": 1.0,
+    "preprocessing": "fold-local per-dimension standardization",
+    "initialization": "zero weights and bias"
+  },
+  "agent500": {
+    "1": {
+      "accuracy_mean": 0.50386,
+      "accuracy_std_across_folds": 0.010914320867557448,
+      "macro_f1_mean": 0.5028958142523761,
+      "macro_f1_std_across_folds": 0.010364756113366983,
+      "per_fold": [
+        {
+          "fold": 0,
+          "fit_diagnostics": {
+            "steps": 40,
+            "final_objective": 0.3409769833087921
+          },
+          "metrics": {
+            "1": {
+              "accuracy": 0.4895,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.48891770322421585,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.4895,
+                  "macro_f1": 0.48891770322421585,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.4895,
+                  "macro_f1": 0.48891770322421585,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.4895,
+                  "macro_f1": 0.48891770322421585,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.9899999999999999,
+              "accuracy_grouping_std": 1.1102230246251565e-16,
+              "macro_f1": 0.9866666666666667,
+              "macro_f1_grouping_std": 1.1102230246251565e-16,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.99,
+                  "macro_f1": 0.9866666666666666,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.99,
+                  "macro_f1": 0.9866666666666666,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.99,
+                  "macro_f1": 0.9866666666666666,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "fit_diagnostics": {
+            "steps": 40,
+            "final_objective": 0.3478340804576874
+          },
+          "metrics": {
+            "1": {
+              "accuracy": 0.5124,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.5107656268919147,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.5124,
+                  "macro_f1": 0.5107656268919147,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.5124,
+                  "macro_f1": 0.5107656268919147,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.5124,
+                  "macro_f1": 0.5107656268919147,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.96,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.9533333333333333,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.96,
+                  "macro_f1": 0.9533333333333333,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.96,
+                  "macro_f1": 0.9533333333333333,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.96,
+                  "macro_f1": 0.9533333333333333,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "fit_diagnostics": {
+            "steps": 40,
+            "final_objective": 0.3494427502155304
+          },
+          "metrics": {
+            "1": {
+              "accuracy": 0.518,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.5164009578605873,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.518,
+                  "macro_f1": 0.5164009578605873,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.518,
+                  "macro_f1": 0.5164009578605873,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.518,
+                  "macro_f1": 0.5164009578605873,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.96,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.9466666666666667,
+              "macro_f1_grouping_std": 1.1102230246251565e-16,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.96,
+                  "macro_f1": 0.9466666666666665,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.96,
+                  "macro_f1": 0.9466666666666665,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.96,
+                  "macro_f1": 0.9466666666666665,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "fit_diagnostics": {
+            "steps": 40,
+            "final_objective": 0.34904471039772034
+          },
+          "metrics": {
+            "1": {
+              "accuracy": 0.5061,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.5051165868611558,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.5061,
+                  "macro_f1": 0.5051165868611558,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.5061,
+                  "macro_f1": 0.5051165868611558,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.5061,
+                  "macro_f1": 0.5051165868611558,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.92,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.9016666666666667,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.92,
+                  "macro_f1": 0.9016666666666667,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.92,
+                  "macro_f1": 0.9016666666666667,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.92,
+                  "macro_f1": 0.9016666666666667,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "fit_diagnostics": {
+            "steps": 40,
+            "final_objective": 0.3405940532684326
+          },
+          "metrics": {
+            "1": {
+              "accuracy": 0.4933,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.4932781964240071,
+              "macro_f1_grouping_std": 5.551115123125783e-17,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.4933,
+                  "macro_f1": 0.49327819642400705,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.4933,
+                  "macro_f1": 0.49327819642400705,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.4933,
+                  "macro_f1": 0.49327819642400705,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.98,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.9733333333333333,
+              "macro_f1_grouping_std": 1.1102230246251565e-16,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.98,
+                  "macro_f1": 0.9733333333333334,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.98,
+                  "macro_f1": 0.9733333333333334,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.98,
+                  "macro_f1": 0.9733333333333334,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "100": {
+      "accuracy_mean": 0.962,
+      "accuracy_std_across_folds": 0.023999999999999955,
+      "macro_f1_mean": 0.9523333333333334,
+      "macro_f1_std_across_folds": 0.029051678092667878,
+      "per_fold": [
+        {
+          "fold": 0,
+          "fit_diagnostics": {
+            "steps": 40,
+            "final_objective": 0.3409769833087921
+          },
+          "metrics": {
+            "1": {
+              "accuracy": 0.4895,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.48891770322421585,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.4895,
+                  "macro_f1": 0.48891770322421585,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.4895,
+                  "macro_f1": 0.48891770322421585,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.4895,
+                  "macro_f1": 0.48891770322421585,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.9899999999999999,
+              "accuracy_grouping_std": 1.1102230246251565e-16,
+              "macro_f1": 0.9866666666666667,
+              "macro_f1_grouping_std": 1.1102230246251565e-16,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.99,
+                  "macro_f1": 0.9866666666666666,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.99,
+                  "macro_f1": 0.9866666666666666,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.99,
+                  "macro_f1": 0.9866666666666666,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "fit_diagnostics": {
+            "steps": 40,
+            "final_objective": 0.3478340804576874
+          },
+          "metrics": {
+            "1": {
+              "accuracy": 0.5124,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.5107656268919147,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.5124,
+                  "macro_f1": 0.5107656268919147,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.5124,
+                  "macro_f1": 0.5107656268919147,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.5124,
+                  "macro_f1": 0.5107656268919147,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.96,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.9533333333333333,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.96,
+                  "macro_f1": 0.9533333333333333,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.96,
+                  "macro_f1": 0.9533333333333333,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.96,
+                  "macro_f1": 0.9533333333333333,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "fit_diagnostics": {
+            "steps": 40,
+            "final_objective": 0.3494427502155304
+          },
+          "metrics": {
+            "1": {
+              "accuracy": 0.518,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.5164009578605873,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.518,
+                  "macro_f1": 0.5164009578605873,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.518,
+                  "macro_f1": 0.5164009578605873,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.518,
+                  "macro_f1": 0.5164009578605873,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.96,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.9466666666666667,
+              "macro_f1_grouping_std": 1.1102230246251565e-16,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.96,
+                  "macro_f1": 0.9466666666666665,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.96,
+                  "macro_f1": 0.9466666666666665,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.96,
+                  "macro_f1": 0.9466666666666665,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "fit_diagnostics": {
+            "steps": 40,
+            "final_objective": 0.34904471039772034
+          },
+          "metrics": {
+            "1": {
+              "accuracy": 0.5061,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.5051165868611558,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.5061,
+                  "macro_f1": 0.5051165868611558,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.5061,
+                  "macro_f1": 0.5051165868611558,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.5061,
+                  "macro_f1": 0.5051165868611558,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.92,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.9016666666666667,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.92,
+                  "macro_f1": 0.9016666666666667,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.92,
+                  "macro_f1": 0.9016666666666667,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.92,
+                  "macro_f1": 0.9016666666666667,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "fit_diagnostics": {
+            "steps": 40,
+            "final_objective": 0.3405940532684326
+          },
+          "metrics": {
+            "1": {
+              "accuracy": 0.4933,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.4932781964240071,
+              "macro_f1_grouping_std": 5.551115123125783e-17,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.4933,
+                  "macro_f1": 0.49327819642400705,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.4933,
+                  "macro_f1": 0.49327819642400705,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.4933,
+                  "macro_f1": 0.49327819642400705,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.98,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.9733333333333333,
+              "macro_f1_grouping_std": 1.1102230246251565e-16,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.98,
+                  "macro_f1": 0.9733333333333334,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.98,
+                  "macro_f1": 0.9733333333333334,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.98,
+                  "macro_f1": 0.9733333333333334,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "math100": {
+    "100": {
+      "accuracy_mean": 0.33,
+      "accuracy_std_across_folds": 0.028284271247461888,
+      "macro_f1_mean": 0.2419982128982129,
+      "macro_f1_std_across_folds": 0.025355569022809853,
+      "per_fold": [
+        {
+          "fold": 0,
+          "metrics": {
+            "100": {
+              "accuracy": 0.3499999999999999,
+              "accuracy_grouping_std": 5.551115123125783e-17,
+              "macro_f1": 0.26187179487179485,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.35,
+                  "macro_f1": 0.26187179487179485,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.35,
+                  "macro_f1": 0.26187179487179485,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.35,
+                  "macro_f1": 0.26187179487179485,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "metrics": {
+            "100": {
+              "accuracy": 0.32,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.24004040404040403,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.32,
+                  "macro_f1": 0.24004040404040403,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.32,
+                  "macro_f1": 0.24004040404040403,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.32,
+                  "macro_f1": 0.24004040404040403,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "metrics": {
+            "100": {
+              "accuracy": 0.34,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.24503846153846154,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.34,
+                  "macro_f1": 0.24503846153846154,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.34,
+                  "macro_f1": 0.24503846153846154,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.34,
+                  "macro_f1": 0.24503846153846154,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "metrics": {
+            "100": {
+              "accuracy": 0.28,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.19555555555555557,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.28,
+                  "macro_f1": 0.19555555555555557,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.28,
+                  "macro_f1": 0.19555555555555557,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.28,
+                  "macro_f1": 0.19555555555555557,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "metrics": {
+            "100": {
+              "accuracy": 0.36000000000000004,
+              "accuracy_grouping_std": 5.551115123125783e-17,
+              "macro_f1": 0.2674848484848485,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.36,
+                  "macro_f1": 0.2674848484848485,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.36,
+                  "macro_f1": 0.2674848484848485,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.36,
+                  "macro_f1": 0.2674848484848485,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "math100_fold_logposterior_ensemble": {
+    "100": {
+      "accuracy": 0.34,
+      "accuracy_grouping_std": 0.0,
+      "macro_f1": 0.2498888888888889,
+      "macro_f1_grouping_std": 2.7755575615628914e-17,
+      "n_fingerprints": 100,
+      "by_grouping_seed": {
+        "42": {
+          "accuracy": 0.34,
+          "macro_f1": 0.24988888888888888,
+          "n_fingerprints": 100
+        },
+        "43": {
+          "accuracy": 0.34,
+          "macro_f1": 0.24988888888888888,
+          "n_fingerprints": 100
+        },
+        "44": {
+          "accuracy": 0.34,
+          "macro_f1": 0.24988888888888888,
+          "n_fingerprints": 100
+        }
+      }
+    }
+  }
+}

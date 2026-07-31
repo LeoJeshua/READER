@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "method": "frozen_bge_linear_probe",
+  "protocol": "agent500_fold_models_to_math100_no_retraining",
+  "std_protocol": "population std across five Agent500 outer-fold models",
+  "train_feature_source": "$CACHE_ROOT/exp_agent_n500/100-way/baseline_features/all_targets_bge_response.npz",
+  "math_feature_source": "$CACHE_ROOT/exp_agent_n500/100-way/baseline_features_math/all_targets_bge_math_response.npz",
+  "fold_summary": {
+    "100": {
+      "accuracy_mean": 0.10200000000000001,
+      "accuracy_std_across_folds": 0.024819347291981715,
+      "macro_f1_mean": 0.055366586713672825,
+      "macro_f1_std_across_folds": 0.016600745765659373,
+      "per_fold": [
+        {
+          "fold": 0,
+          "head_source": "$CACHE_ROOT/exp_agent_n500/100-way/lr_heads/prompt_grouped_v1/fullrank/baseline/clean/bge_logposterior_flat_prompt_grouped_v1_fold0.joblib",
+          "metrics": {
+            "100": {
+              "accuracy": 0.09000000000000001,
+              "accuracy_grouping_std": 1.3877787807814457e-17,
+              "macro_f1": 0.042833333333333334,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.09,
+                  "macro_f1": 0.042833333333333334,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.09,
+                  "macro_f1": 0.042833333333333334,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.09,
+                  "macro_f1": 0.042833333333333334,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "head_source": "$CACHE_ROOT/exp_agent_n500/100-way/lr_heads/prompt_grouped_v1/fullrank/baseline/clean/bge_logposterior_flat_prompt_grouped_v1_fold1.joblib",
+          "metrics": {
+            "100": {
+              "accuracy": 0.14,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.08382186234817812,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.14,
+                  "macro_f1": 0.08382186234817812,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.14,
+                  "macro_f1": 0.08382186234817812,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.14,
+                  "macro_f1": 0.08382186234817812,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "head_source": "$CACHE_ROOT/exp_agent_n500/100-way/lr_heads/prompt_grouped_v1/fullrank/baseline/clean/bge_logposterior_flat_prompt_grouped_v1_fold2.joblib",
+          "metrics": {
+            "100": {
+              "accuracy": 0.12,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.062092100406053896,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.12,
+                  "macro_f1": 0.062092100406053896,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.12,
+                  "macro_f1": 0.062092100406053896,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.12,
+                  "macro_f1": 0.062092100406053896,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "head_source": "$CACHE_ROOT/exp_agent_n500/100-way/lr_heads/prompt_grouped_v1/fullrank/baseline/clean/bge_logposterior_flat_prompt_grouped_v1_fold3.joblib",
+          "metrics": {
+            "100": {
+              "accuracy": 0.07,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.036645161290322574,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.07,
+                  "macro_f1": 0.036645161290322574,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.07,
+                  "macro_f1": 0.036645161290322574,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.07,
+                  "macro_f1": 0.036645161290322574,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "head_source": "$CACHE_ROOT/exp_agent_n500/100-way/lr_heads/prompt_grouped_v1/fullrank/baseline/clean/bge_logposterior_flat_prompt_grouped_v1_fold4.joblib",
+          "metrics": {
+            "100": {
+              "accuracy": 0.09000000000000001,
+              "accuracy_grouping_std": 1.3877787807814457e-17,
+              "macro_f1": 0.05144047619047618,
+              "macro_f1_grouping_std": 6.938893903907228e-18,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.09,
+                  "macro_f1": 0.05144047619047619,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.09,
+                  "macro_f1": 0.05144047619047619,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.09,
+                  "macro_f1": 0.05144047619047619,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "fold_logposterior_ensemble": {
+    "100": {
+      "accuracy": 0.10000000000000002,
+      "accuracy_grouping_std": 1.3877787807814457e-17,
+      "macro_f1": 0.062323809523809524,
+      "macro_f1_grouping_std": 6.938893903907228e-18,
+      "n_fingerprints": 100,
+      "by_grouping_seed": {
+        "42": {
+          "accuracy": 0.1,
+          "macro_f1": 0.06232380952380952,
+          "n_fingerprints": 100
+        },
+        "43": {
+          "accuracy": 0.1,
+          "macro_f1": 0.06232380952380952,
+          "n_fingerprints": 100
+        },
+        "44": {
+          "accuracy": 0.1,
+          "macro_f1": 0.06232380952380952,
+          "n_fingerprints": 100
+        }
+      }
+    }
+  }
+}

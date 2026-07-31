@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+build/
+dist/
+outputs/
+artifacts/
+*.npy
+*.npz
+*.pt
+*.pth
+*.safetensors
+*.log
+.env
+configs/local.yaml
+
+# Local research workspace. These paths may contain internal launchers,
+# raw responses, feature caches, and machine-specific configuration.
+/private/
+/cache/
+/mmlu_pro_api/results/

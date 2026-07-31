@@ -1,0 +1,28 @@
+{
+  "batch_size": 128,
+  "created_at_unix": 1785401387.1745875,
+  "encoder_parameters": 435164260,
+  "hardware": "NVIDIA H200 140GB",
+  "head_parameters": null,
+  "inference_parameters": 435164260,
+  "input_view": "response_only",
+  "max_input_tokens": 256,
+  "method": "finetuned_deberta",
+  "mode": "deberta-inference",
+  "n_samples": 256,
+  "protocol": "agent500_compute_cost_v1",
+  "tag": "deberta_v3_large",
+  "timing": {
+    "median_ms_per_response": 2.895274170441553,
+    "median_responses_per_second": 345.3904332132704,
+    "median_seconds": 0.7411901876330376,
+    "repeats": 3,
+    "seconds": [
+      7.328285329043865,
+      0.7411901876330376,
+      0.7381562814116478
+    ]
+  },
+  "timing_scope": "tokenization + FP32 end-to-end classifier forward; excludes model loading and disk I/O",
+  "trainable_parameters": 435164260
+}

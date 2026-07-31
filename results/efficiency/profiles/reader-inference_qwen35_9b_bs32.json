@@ -1,0 +1,36 @@
+{
+  "batch_size": 32,
+  "created_at_unix": 1785425979.0323424,
+  "early_exit_validation": {
+    "layer_index": 18,
+    "max_absolute_error": 0.0,
+    "mean_absolute_error": 0.0,
+    "n_samples": 2
+  },
+  "encoder_parameters": 4913713792,
+  "hardware": "NVIDIA H200 140GB",
+  "head_parameters": 819300,
+  "inference_parameters": 4914533092,
+  "input_view": "prompt_response",
+  "loaded_checkpoint_parameters": 8953803264,
+  "max_input_tokens": 1024,
+  "method": "reader",
+  "mode": "reader-inference",
+  "n_samples": 256,
+  "protocol": "agent500_compute_cost_v1",
+  "selected_layer": 18,
+  "tag": "qwen35_9b",
+  "timing": {
+    "median_ms_per_response": 6.501294454210438,
+    "median_responses_per_second": 153.81552197691482,
+    "median_seconds": 1.664331380277872,
+    "repeats": 3,
+    "seconds": [
+      1.6864466592669487,
+      1.664331380277872,
+      1.6565829329192638
+    ]
+  },
+  "timing_scope": "tokenization + early-exit frozen proxy forward through selected layer + response-token DCT + 100-way linear score; excludes model loading and disk I/O",
+  "trainable_parameters": 819300
+}

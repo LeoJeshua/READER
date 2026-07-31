@@ -1,0 +1,11 @@
+schema_version: 1
+agent500:
+  prompts: data/prompts/agent500.jsonl.gz
+  max_new_tokens: 128
+math100:
+  prompts: data/prompts/math100.jsonl.gz
+  max_new_tokens: 128
+generation:
+  temperature: 0.7
+  top_p: 0.95
+  samples_per_prompt: 1

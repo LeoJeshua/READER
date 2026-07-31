@@ -1,0 +1,24 @@
+{
+  "created_at_unix": 1785400936.33055,
+  "feature_dim": 768,
+  "final_objectives": [
+    3.7038581371307373,
+    3.7038581371307373,
+    3.7038581371307373
+  ],
+  "hardware": "NVIDIA H200 140GB",
+  "median_seconds": 0.17250946164131165,
+  "method": "llm_dna_dynamic",
+  "mode": "dna-train",
+  "n_train": 40000,
+  "protocol": "agent500_compute_cost_v1",
+  "repeats": 3,
+  "seconds": [
+    1.284867089241743,
+    0.15443981066346169,
+    0.17250946164131165
+  ],
+  "tag": "mpnet",
+  "trainable_parameters": 76900,
+  "training_scope": "one outer fold; feature archive already available; includes fold-local standardization and 40 full-batch Adam steps"
+}

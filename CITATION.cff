@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use READER or Agent500, please cite this work."
+title: "READER: Dynamic LLM Provenance from Query-Varying Interactions"
+type: software
+version: 1.0.0
+date-released: 2026-07-31
+authors:
+  - family-names: Liu
+    given-names: Jiaxu
+  - family-names: Mu
+    given-names: Sunnan
+  - family-names: Huang
+    given-names: Dong
+  - family-names: Wang
+    given-names: Liuyin
+  - family-names: Shao
+    given-names: Jing
+  - family-names: Zhang
+    given-names: Jie
+license: MIT
+repository-code: "https://github.com/LeoJeshua/READER"

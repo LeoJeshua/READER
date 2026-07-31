@@ -1,0 +1,24 @@
+{
+  "created_at_unix": 1785400974.4802558,
+  "feature_dim": 4096,
+  "final_objectives": [
+    1.9384136199951172,
+    1.9384136199951172,
+    1.9384136199951172
+  ],
+  "hardware": "NVIDIA H200 140GB",
+  "median_seconds": 0.40747005119919777,
+  "method": "llm_dna_dynamic",
+  "mode": "dna-train",
+  "n_train": 40000,
+  "protocol": "agent500_compute_cost_v1",
+  "repeats": 3,
+  "seconds": [
+    1.5928246453404427,
+    0.3921676091849804,
+    0.40747005119919777
+  ],
+  "tag": "qwen3emb",
+  "trainable_parameters": 409700,
+  "training_scope": "one outer fold; feature archive already available; includes fold-local standardization and 40 full-batch Adam steps"
+}

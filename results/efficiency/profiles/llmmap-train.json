@@ -1,0 +1,49 @@
+{
+  "created_at_unix": 1785401532.9724612,
+  "feature_dim": 2048,
+  "hardware": "NVIDIA H200 140GB",
+  "history": [
+    {
+      "accuracy": 0.095,
+      "examples": 40000,
+      "loss": 3.669494256591797
+    },
+    {
+      "accuracy": 0.18725,
+      "examples": 40000,
+      "loss": 2.896753402709961
+    },
+    {
+      "accuracy": 0.223675,
+      "examples": 40000,
+      "loss": 2.6322855533599854
+    },
+    {
+      "accuracy": 0.25045,
+      "examples": 40000,
+      "loss": 2.4839594257354736
+    },
+    {
+      "accuracy": 0.269375,
+      "examples": 40000,
+      "loss": 2.373008939361572
+    },
+    {
+      "accuracy": 0.288225,
+      "examples": 40000,
+      "loss": 2.2767709154129028
+    }
+  ],
+  "median_seconds": 10.289638929069042,
+  "method": "llmmap_dynamic",
+  "mode": "llmmap-train",
+  "n_train": 40000,
+  "protocol": "agent500_compute_cost_v1",
+  "seconds": [
+    10.289638929069042
+  ],
+  "selected_epochs": 6,
+  "tag": "llmmap",
+  "trainable_parameters": 3047908,
+  "training_scope": "one outer fold at Q=1; frozen E5 embeddings already available; six selected epochs with method-native Adam"
+}

@@ -1,0 +1,24 @@
+{
+  "created_at_unix": 1785400965.771731,
+  "feature_dim": 1024,
+  "final_objectives": [
+    3.187382221221924,
+    3.187382221221924,
+    3.187382221221924
+  ],
+  "hardware": "NVIDIA H200 140GB",
+  "median_seconds": 0.16635889932513237,
+  "method": "llm_dna_dynamic",
+  "mode": "dna-train",
+  "n_train": 40000,
+  "protocol": "agent500_compute_cost_v1",
+  "repeats": 3,
+  "seconds": [
+    1.5583858601748943,
+    0.13255150616168976,
+    0.16635889932513237
+  ],
+  "tag": "bge",
+  "trainable_parameters": 102500,
+  "training_scope": "one outer fold; feature archive already available; includes fold-local standardization and 40 full-batch Adam steps"
+}

@@ -1,0 +1,25 @@
+schema_version: 1
+mmlu_pro:
+  source: locally reproduced official-style MMLU-Pro evaluation
+  protocol: 5-shot CoT, non-thinking, temperature 0
+  scores:
+    llama31_8b_instruct: 0.47132646276595747
+    gemma4_12b: 0.76953125
+    ministral3_8b: 0.6856715425531915
+    qwen35_9b: 0.7765126329787234
+    olmo3_7b_instruct: 0.546376329787234
+    qwen3_8b: 0.6393783244680851
+    qwen3_32b: 0.7206615691489362
+    qwen35_27b: 0.8331117021276596
+gpqa_diamond:
+  source: https://artificialanalysis.ai/evaluations/gpqa-diamond
+  protocol: non-reasoning scores recorded for the paper analysis
+  scores:
+    llama31_8b_instruct: 0.259
+    gemma4_12b: 0.661
+    ministral3_8b: 0.471
+    qwen35_9b: 0.786
+    olmo3_7b_instruct: 0.400
+    qwen3_8b: 0.452
+    qwen3_32b: 0.535
+    qwen35_27b: 0.842

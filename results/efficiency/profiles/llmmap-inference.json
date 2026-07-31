@@ -1,0 +1,29 @@
+{
+  "batch_size": 256,
+  "created_at_unix": 1785401508.901406,
+  "encoder_parameters": 559890432,
+  "hardware": "NVIDIA H200 140GB",
+  "head_parameters": 3047908,
+  "inference_parameters": 562938340,
+  "input_view": "prompt_and_response_embeddings",
+  "max_input_tokens_per_text": 512,
+  "max_response_chars": 650,
+  "method": "llmmap_dynamic",
+  "mode": "llmmap-inference",
+  "n_samples": 256,
+  "protocol": "agent500_compute_cost_v1",
+  "tag": "llmmap",
+  "timing": {
+    "median_ms_per_response": 0.6111776601755992,
+    "median_responses_per_second": 1636.185458271965,
+    "median_seconds": 0.15646148100495338,
+    "repeats": 3,
+    "seconds": [
+      0.7470166943967342,
+      0.15646148100495338,
+      0.15318633988499641
+    ]
+  },
+  "timing_scope": "tokenization + two frozen E5 encodings + LLMmap transformer head; excludes model loading and disk I/O",
+  "trainable_parameters": 3047908
+}

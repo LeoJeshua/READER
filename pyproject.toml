@@ -1,29 +1,66 @@
 [project]
-name = "llm-provenance-tracker"
-version = "0.1.0"
-description = "Independent research framework for LLM provenance identification and degradation monitoring via proxy-model activations."
+name = "reader-provenance"
+version = "1.0.0"
+description = "READER: dynamic LLM provenance from query-varying interactions"
+readme = "README.md"
 requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Jiaxu Liu"},
+  {name = "Sunnan Mu"},
+  {name = "Dong Huang"},
+  {name = "Liuyin Wang"},
+  {name = "Jing Shao"},
+  {name = "Jie Zhang"},
+]
 dependencies = [
-  "numpy>=1.24.0",
-  "torch>=2.4.0",
-  "transformers>=4.40.0",
-  "scikit-learn>=1.3.0",
-  "tqdm>=4.65.0",
+  "accelerate>=1.0",
+  "numpy>=1.26",
+  "PyYAML>=6.0",
+  "scikit-learn>=1.4",
+  "scipy>=1.11",
+  "torch>=2.4",
+  "transformers>=5.0",
 ]
 
 [project.optional-dependencies]
-dev = [
-  "pytest>=7.4.0",
-]
+baselines = ["sentence-transformers>=3.0"]
+plots = ["matplotlib>=3.8", "pandas>=2.1", "seaborn>=0.13"]
+dev = ["pytest>=8.0", "ruff>=0.9"]
+
+[project.scripts]
+reader-data = "reader_provenance.data.cli:main"
+reader-extract = "reader_provenance.experiments.extract:main"
+reader-embed = "reader_provenance.baselines.sentence_embeddings:main"
+reader-agent500 = "reader_provenance.experiments.agent500:main"
+reader-stress = "reader_provenance.experiments.stress:main"
+reader-bench-a = "reader_provenance.experiments.bench_a:main"
+reader-dna-static = "reader_provenance.experiments.dna_static:main"
+reader-deberta = "reader_provenance.experiments.deberta:main"
+reader-llmmap = "reader_provenance.experiments.llmmap:main"
+reader-temporal = "reader_provenance.experiments.temporal:main"
+reader-layer-scan = "reader_provenance.experiments.layers:main"
+reader-variance = "reader_provenance.experiments.variance:main"
+reader-report = "reader_provenance.reporting.cli:main"
+reader-statistics = "reader_provenance.reporting.statistics:main"
+reader-geometry = "reader_provenance.experiments.geometry:main"
+reader-confusion = "reader_provenance.reporting.confusion:main"
+reader-tables = "reader_provenance.reporting.tables:main"
 
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
 
-[tool.hatch.build.targets.wheel]
-packages = ["src/provenance_tracker"]
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-python_files = ["test_*.py"]
 addopts = "-q"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

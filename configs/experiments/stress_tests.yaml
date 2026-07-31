@@ -1,0 +1,23 @@
+schema_version: 1
+enrollment: agent500_100-way
+probe: qwen35_9b
+retraining: false
+conditions:
+  - name: agent500_128_tokens
+    benchmark: agent500
+    response_tokens: 128
+    fold_assignment: prompt_matched_out_of_fold
+  - name: agent500_64_tokens
+    benchmark: agent500
+    response_tokens: 64
+    fold_assignment: prompt_matched_out_of_fold
+  - name: agent500_32_tokens
+    benchmark: agent500
+    response_tokens: 32
+    fold_assignment: prompt_matched_out_of_fold
+  - name: math100
+    benchmark: math100
+    response_tokens: null
+    fold_assignment: five_fold_log_posterior_ensemble
+query_budgets: [1, 5, 10, 20, 50, 100]
+grouping_seeds: [42, 43, 44]

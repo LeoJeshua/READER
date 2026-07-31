@@ -1,0 +1,28 @@
+{
+  "batch_size": 32,
+  "created_at_unix": 1785401564.3090787,
+  "encoder_parameters": 335141888,
+  "feature_dim": 1024,
+  "hardware": "NVIDIA H200 140GB",
+  "head_parameters": 102500,
+  "inference_parameters": 335244388,
+  "input_view": "response_only",
+  "method": "llm_dna_dynamic",
+  "mode": "dna-inference",
+  "n_samples": 256,
+  "protocol": "agent500_compute_cost_v1",
+  "tag": "bge",
+  "timing": {
+    "median_ms_per_response": 2.9108991293469444,
+    "median_responses_per_second": 343.53646607615303,
+    "median_seconds": 0.7451901771128178,
+    "repeats": 3,
+    "seconds": [
+      0.7492028884589672,
+      0.7448874898254871,
+      0.7451901771128178
+    ]
+  },
+  "timing_scope": "tokenization + frozen sentence encoder + pooling + scaler + 100-way linear score; excludes model loading and disk I/O",
+  "trainable_parameters": 102500
+}

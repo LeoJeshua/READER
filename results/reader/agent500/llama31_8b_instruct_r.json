@@ -1,0 +1,1041 @@
+{
+  "schema_version": 1,
+  "protocol": "dct_alltokens_component_adam_evaluation_v2",
+  "method_tag": "llama31_8b_instruct_r",
+  "train_source": "$CACHE_ROOT/exp_agent_n500/100-way/dct_alltokens_fullrank_best_layer_v2/features_agent500_r/llama31_8b_instruct_L2_r_alltokens_dctq2.npz",
+  "split_protocol": "prompt_grouped_v1",
+  "split_seed": 42,
+  "grouping_seeds": [
+    42,
+    43,
+    44
+  ],
+  "n_splits": 5,
+  "cv_ks": [
+    1,
+    5,
+    10,
+    20,
+    50,
+    100
+  ],
+  "external_ks": [
+    1,
+    5,
+    10,
+    20,
+    50,
+    100
+  ],
+  "n_samples": 50000,
+  "n_classes": 100,
+  "n_prompt_ids": 500,
+  "representations": {
+    "dct_dc_fullrank": "all-token DCT mode 0",
+    "dct_ac_fullrank": "all-token DCT mode 1",
+    "dct_dc_ac_fullrank": "concatenated DCT modes 0 and 1"
+  },
+  "fit_scope": "all scalers and LR heads use Agent500 outer-training prompts only",
+  "classifier": {
+    "implementation": "full-batch torch multinomial logistic regression",
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "max_steps": 40,
+    "learning_rate_schedule": "cosine decay to 1 percent of initial learning rate",
+    "schedule_horizon": 100,
+    "c_value": 1.0,
+    "regularization": "explicit L2 on weights only, 1/(2*C*n_train) * ||W||^2",
+    "preprocessing": "fold-local per-dimension standardization",
+    "device": "cuda"
+  },
+  "external_evaluation_protocols": {
+    "prompt_matched_out_of_fold": "no retraining; each prompt-aligned perturbation is evaluated only by the Agent500 fold model that did not train on that prompt",
+    "fold_model_ensemble": "no retraining; unseen prompts use mean log posterior across the five Agent500 outer-fold models"
+  },
+  "evidence_aggregation": "mean per-response log posterior",
+  "configs": {
+    "dct_dc_fullrank": {
+      "feature_dimension": 4096,
+      "cv_metrics_by_grouping_seed": {
+        "42": {
+          "1": {
+            "method": "dct_dc_fullrank",
+            "K": 1,
+            "n_fingerprints": 50000,
+            "accuracy": 0.46724,
+            "macro_f1": 0.4624386833102947,
+            "nll": 1.6875975013020401,
+            "ece": 0.0077207951176166585,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "5": {
+            "method": "dct_dc_fullrank",
+            "K": 5,
+            "n_fingerprints": 10000,
+            "accuracy": 0.757,
+            "macro_f1": 0.7550991246244466,
+            "nll": 1.0017498308938853,
+            "ece": 0.29746273995041844,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "10": {
+            "method": "dct_dc_fullrank",
+            "K": 10,
+            "n_fingerprints": 5000,
+            "accuracy": 0.834,
+            "macro_f1": 0.8328420197867742,
+            "nll": 0.9244735568770486,
+            "ece": 0.3675735097169876,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "20": {
+            "method": "dct_dc_fullrank",
+            "K": 20,
+            "n_fingerprints": 2500,
+            "accuracy": 0.8868,
+            "macro_f1": 0.8856185302445041,
+            "nll": 0.8891098433514782,
+            "ece": 0.4152951537907123,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "50": {
+            "method": "dct_dc_fullrank",
+            "K": 50,
+            "n_fingerprints": 1000,
+            "accuracy": 0.927,
+            "macro_f1": 0.924917375551566,
+            "nll": 0.8671935671287642,
+            "ece": 0.4523718494772911,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "100": {
+            "method": "dct_dc_fullrank",
+            "K": 100,
+            "n_fingerprints": 500,
+            "accuracy": 0.946,
+            "macro_f1": 0.944502553002553,
+            "nll": 0.8576970387182848,
+            "ece": 0.4692305680811405,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          }
+        },
+        "43": {
+          "1": {
+            "method": "dct_dc_fullrank",
+            "K": 1,
+            "n_fingerprints": 50000,
+            "accuracy": 0.46724,
+            "macro_f1": 0.4624386833102947,
+            "nll": 1.6875975013020406,
+            "ece": 0.0077207941928505944,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "5": {
+            "method": "dct_dc_fullrank",
+            "K": 5,
+            "n_fingerprints": 10000,
+            "accuracy": 0.762,
+            "macro_f1": 0.7602644004800707,
+            "nll": 1.002375278110746,
+            "ece": 0.3028835569515824,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "10": {
+            "method": "dct_dc_fullrank",
+            "K": 10,
+            "n_fingerprints": 5000,
+            "accuracy": 0.8394,
+            "macro_f1": 0.8382114984636704,
+            "nll": 0.9243904235072081,
+            "ece": 0.3733896476611495,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "20": {
+            "method": "dct_dc_fullrank",
+            "K": 20,
+            "n_fingerprints": 2500,
+            "accuracy": 0.8836,
+            "macro_f1": 0.882195052224844,
+            "nll": 0.890131723416043,
+            "ece": 0.4124151453226805,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "50": {
+            "method": "dct_dc_fullrank",
+            "K": 50,
+            "n_fingerprints": 1000,
+            "accuracy": 0.931,
+            "macro_f1": 0.930348790434973,
+            "nll": 0.8671963031943828,
+            "ece": 0.4560059398710728,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "100": {
+            "method": "dct_dc_fullrank",
+            "K": 100,
+            "n_fingerprints": 500,
+            "accuracy": 0.946,
+            "macro_f1": 0.944502553002553,
+            "nll": 0.8576970438824287,
+            "ece": 0.46923056045174594,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          }
+        },
+        "44": {
+          "1": {
+            "method": "dct_dc_fullrank",
+            "K": 1,
+            "n_fingerprints": 50000,
+            "accuracy": 0.46724,
+            "macro_f1": 0.4624386833102947,
+            "nll": 1.6875975013020401,
+            "ece": 0.007720792647600179,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "5": {
+            "method": "dct_dc_fullrank",
+            "K": 5,
+            "n_fingerprints": 10000,
+            "accuracy": 0.7614,
+            "macro_f1": 0.7595574326322762,
+            "nll": 1.0018037881162807,
+            "ece": 0.3021052041858435,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "10": {
+            "method": "dct_dc_fullrank",
+            "K": 10,
+            "n_fingerprints": 5000,
+            "accuracy": 0.8418,
+            "macro_f1": 0.8409369227308316,
+            "nll": 0.9244234044463537,
+            "ece": 0.37581658775806426,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "20": {
+            "method": "dct_dc_fullrank",
+            "K": 20,
+            "n_fingerprints": 2500,
+            "accuracy": 0.8892,
+            "macro_f1": 0.888776691694529,
+            "nll": 0.8895456547265401,
+            "ece": 0.4178864597439766,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "50": {
+            "method": "dct_dc_fullrank",
+            "K": 50,
+            "n_fingerprints": 1000,
+            "accuracy": 0.925,
+            "macro_f1": 0.9239729617386098,
+            "nll": 0.866940762999407,
+            "ece": 0.4499721687734127,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "100": {
+            "method": "dct_dc_fullrank",
+            "K": 100,
+            "n_fingerprints": 500,
+            "accuracy": 0.946,
+            "macro_f1": 0.944502553002553,
+            "nll": 0.8576970286807688,
+            "ece": 0.46923054447770113,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          }
+        }
+      },
+      "cv_metrics_across_grouping_seeds": {
+        "1": {
+          "accuracy_mean": 0.46724000000000004,
+          "accuracy_std": 5.551115123125783e-17,
+          "macro_f1_mean": 0.4624386833102947,
+          "macro_f1_std": 0.0,
+          "nll_mean": 1.6875975013020401,
+          "nll_std": 2.5639502485114184e-16,
+          "ece_mean": 0.007720793986022478,
+          "ece_std": 1.0189304048307323e-09
+        },
+        "5": {
+          "accuracy_mean": 0.7601333333333334,
+          "accuracy_std": 0.0022291004663067254,
+          "macro_f1_mean": 0.7583069859122645,
+          "macro_f1_std": 0.0022865886404371395,
+          "nll_mean": 1.0019762990403038,
+          "nll_std": 0.0002829794685723619,
+          "ece_mean": 0.30081716702928146,
+          "ece_std": 0.0023931282216017973
+        },
+        "10": {
+          "accuracy_mean": 0.8384,
+          "accuracy_std": 0.0032619012860600352,
+          "macro_f1_mean": 0.8373301469937587,
+          "macro_f1_std": 0.003362979703434052,
+          "nll_mean": 0.9244291282768701,
+          "nll_std": 3.417953551559428e-05,
+          "ece_mean": 0.37225991504540046,
+          "ece_std": 0.003458738280079934
+        },
+        "20": {
+          "accuracy_mean": 0.8865333333333334,
+          "accuracy_std": 0.0022939534045446756,
+          "macro_f1_mean": 0.885530091387959,
+          "macro_f1_std": 0.0026876706892449017,
+          "nll_mean": 0.8895957404980205,
+          "nll_std": 0.00041868138639247066,
+          "ece_mean": 0.4151989196191231,
+          "ece_std": 0.002234691050385086
+        },
+        "50": {
+          "accuracy_mean": 0.9276666666666668,
+          "accuracy_std": 0.0024944382578492965,
+          "macro_f1_mean": 0.9264130425750495,
+          "macro_f1_std": 0.00280957443695594,
+          "nll_mean": 0.8671102111075181,
+          "nll_std": 0.00011982311274139534,
+          "ece_mean": 0.4527833193739255,
+          "ece_std": 0.0024804003738129222
+        },
+        "100": {
+          "accuracy_mean": 0.9460000000000001,
+          "accuracy_std": 1.1102230246251565e-16,
+          "macro_f1_mean": 0.944502553002553,
+          "macro_f1_std": 0.0,
+          "nll_mean": 0.8576970370938275,
+          "nll_std": 6.311458495268275e-09,
+          "ece_mean": 0.46923055767019584,
+          "ece_std": 9.834746333527338e-09
+        }
+      },
+      "external_evaluations": {}
+    },
+    "dct_ac_fullrank": {
+      "feature_dimension": 4096,
+      "cv_metrics_by_grouping_seed": {
+        "42": {
+          "1": {
+            "method": "dct_ac_fullrank",
+            "K": 1,
+            "n_fingerprints": 50000,
+            "accuracy": 0.37442,
+            "macro_f1": 0.3697076359256441,
+            "nll": 2.166140206353087,
+            "ece": 0.01946671562120317,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "5": {
+            "method": "dct_ac_fullrank",
+            "K": 5,
+            "n_fingerprints": 10000,
+            "accuracy": 0.6717,
+            "macro_f1": 0.6687969032084902,
+            "nll": 1.3866228097643998,
+            "ece": 0.3134087099574507,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "10": {
+            "method": "dct_ac_fullrank",
+            "K": 10,
+            "n_fingerprints": 5000,
+            "accuracy": 0.7788,
+            "macro_f1": 0.7773868304333854,
+            "nll": 1.2831152035909246,
+            "ece": 0.4198181375443935,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "20": {
+            "method": "dct_ac_fullrank",
+            "K": 20,
+            "n_fingerprints": 2500,
+            "accuracy": 0.8388,
+            "macro_f1": 0.8374149800246894,
+            "nll": 1.2300477857893846,
+            "ece": 0.47776858032643793,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "50": {
+            "method": "dct_ac_fullrank",
+            "K": 50,
+            "n_fingerprints": 1000,
+            "accuracy": 0.909,
+            "macro_f1": 0.9073295515973535,
+            "nll": 1.1988370674797946,
+            "ece": 0.5458713729232552,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "100": {
+            "method": "dct_ac_fullrank",
+            "K": 100,
+            "n_fingerprints": 500,
+            "accuracy": 0.936,
+            "macro_f1": 0.9312936507936507,
+            "nll": 1.1875507673617394,
+            "ece": 0.5717595201432706,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          }
+        },
+        "43": {
+          "1": {
+            "method": "dct_ac_fullrank",
+            "K": 1,
+            "n_fingerprints": 50000,
+            "accuracy": 0.37442,
+            "macro_f1": 0.3697076359256441,
+            "nll": 2.166140206353087,
+            "ece": 0.019466730132549993,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "5": {
+            "method": "dct_ac_fullrank",
+            "K": 5,
+            "n_fingerprints": 10000,
+            "accuracy": 0.6775,
+            "macro_f1": 0.675565474996212,
+            "nll": 1.3862073450319665,
+            "ece": 0.3188530961029232,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "10": {
+            "method": "dct_ac_fullrank",
+            "K": 10,
+            "n_fingerprints": 5000,
+            "accuracy": 0.7738,
+            "macro_f1": 0.7725546239441282,
+            "nll": 1.2843885999607618,
+            "ece": 0.41516201797425756,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "20": {
+            "method": "dct_ac_fullrank",
+            "K": 20,
+            "n_fingerprints": 2500,
+            "accuracy": 0.848,
+            "macro_f1": 0.8466989891458395,
+            "nll": 1.2315266417342035,
+            "ece": 0.4874954199522733,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "50": {
+            "method": "dct_ac_fullrank",
+            "K": 50,
+            "n_fingerprints": 1000,
+            "accuracy": 0.907,
+            "macro_f1": 0.905462376804482,
+            "nll": 1.1986791052883072,
+            "ece": 0.5436925268694759,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "100": {
+            "method": "dct_ac_fullrank",
+            "K": 100,
+            "n_fingerprints": 500,
+            "accuracy": 0.936,
+            "macro_f1": 0.9312936507936507,
+            "nll": 1.1875507604073414,
+            "ece": 0.5717595187127591,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          }
+        },
+        "44": {
+          "1": {
+            "method": "dct_ac_fullrank",
+            "K": 1,
+            "n_fingerprints": 50000,
+            "accuracy": 0.37442,
+            "macro_f1": 0.3697076359256441,
+            "nll": 2.166140206353087,
+            "ece": 0.019466727645248164,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "5": {
+            "method": "dct_ac_fullrank",
+            "K": 5,
+            "n_fingerprints": 10000,
+            "accuracy": 0.6779,
+            "macro_f1": 0.6760478607187824,
+            "nll": 1.3845008227445226,
+            "ece": 0.320047935718298,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "10": {
+            "method": "dct_ac_fullrank",
+            "K": 10,
+            "n_fingerprints": 5000,
+            "accuracy": 0.7812,
+            "macro_f1": 0.7796678602875329,
+            "nll": 1.283644239581537,
+            "ece": 0.4226724178627133,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "20": {
+            "method": "dct_ac_fullrank",
+            "K": 20,
+            "n_fingerprints": 2500,
+            "accuracy": 0.844,
+            "macro_f1": 0.8428867126373217,
+            "nll": 1.2317350062351733,
+            "ece": 0.4830140041232109,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "50": {
+            "method": "dct_ac_fullrank",
+            "K": 50,
+            "n_fingerprints": 1000,
+            "accuracy": 0.909,
+            "macro_f1": 0.9070412851084544,
+            "nll": 1.198077265044678,
+            "ece": 0.5455694638937711,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "100": {
+            "method": "dct_ac_fullrank",
+            "K": 100,
+            "n_fingerprints": 500,
+            "accuracy": 0.936,
+            "macro_f1": 0.9312936507936507,
+            "nll": 1.187550802944213,
+            "ece": 0.5717595214247704,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          }
+        }
+      },
+      "cv_metrics_across_grouping_seeds": {
+        "1": {
+          "accuracy_mean": 0.37442,
+          "accuracy_std": 0.0,
+          "macro_f1_mean": 0.3697076359256441,
+          "macro_f1_std": 0.0,
+          "nll_mean": 2.166140206353087,
+          "nll_std": 0.0,
+          "ece_mean": 0.01946672446633378,
+          "ece_std": 6.3363459059681965e-09
+        },
+        "5": {
+          "accuracy_mean": 0.6757,
+          "accuracy_std": 0.002833137248116772,
+          "macro_f1_mean": 0.6734700796411616,
+          "macro_f1_std": 0.0033102978188768485,
+          "nll_mean": 1.3857769925136296,
+          "nll_std": 0.0009181901385011039,
+          "ece_mean": 0.31743658059289065,
+          "ece_std": 0.002889603988841921
+        },
+        "10": {
+          "accuracy_mean": 0.7779333333333334,
+          "accuracy_std": 0.0030825674724524917,
+          "macro_f1_mean": 0.7765364382216822,
+          "macro_f1_std": 0.002965569985076211,
+          "nll_mean": 1.283716014377741,
+          "nll_std": 0.0005223334150433535,
+          "ece_mean": 0.4192175244604548,
+          "ece_std": 0.0030953813635348
+        },
+        "20": {
+          "accuracy_mean": 0.8435999999999999,
+          "accuracy_std": 0.0037665191711534697,
+          "macro_f1_mean": 0.8423335606026169,
+          "macro_f1_std": 0.0038103096305088973,
+          "nll_mean": 1.2311031445862537,
+          "nll_std": 0.0007510839207052771,
+          "ece_mean": 0.4827593348006407,
+          "ece_std": 0.003975046718767304
+        },
+        "50": {
+          "accuracy_mean": 0.9083333333333333,
+          "accuracy_std": 0.0009428090415820641,
+          "macro_f1_mean": 0.9066110711700966,
+          "macro_f1_std": 0.000820730752176215,
+          "nll_mean": 1.1985311459375934,
+          "nll_std": 0.0003273570041000323,
+          "ece_mean": 0.5450444545621674,
+          "ece_std": 0.0009638701953481202
+        },
+        "100": {
+          "accuracy_mean": 0.936,
+          "accuracy_std": 0.0,
+          "macro_f1_mean": 0.9312936507936507,
+          "macro_f1_std": 0.0,
+          "nll_mean": 1.1875507769044313,
+          "nll_std": 1.863050522543122e-08,
+          "ece_mean": 0.5717595200936,
+          "ece_std": 1.107730915702871e-09
+        }
+      },
+      "external_evaluations": {}
+    },
+    "dct_dc_ac_fullrank": {
+      "feature_dimension": 8192,
+      "cv_metrics_by_grouping_seed": {
+        "42": {
+          "1": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 1,
+            "n_fingerprints": 50000,
+            "accuracy": 0.47458,
+            "macro_f1": 0.4722566545144628,
+            "nll": 1.6927426889132613,
+            "ece": 0.07986544449210166,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "5": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 5,
+            "n_fingerprints": 10000,
+            "accuracy": 0.7574,
+            "macro_f1": 0.7563450527604187,
+            "nll": 0.8269326965644328,
+            "ece": 0.20427817304357884,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "10": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 10,
+            "n_fingerprints": 5000,
+            "accuracy": 0.8312,
+            "macro_f1": 0.8311876763508262,
+            "nll": 0.7336721663297142,
+            "ece": 0.2699307964771986,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "20": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 20,
+            "n_fingerprints": 2500,
+            "accuracy": 0.8868,
+            "macro_f1": 0.8860684498327018,
+            "nll": 0.6897780673842623,
+            "ece": 0.320899999666214,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "50": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 50,
+            "n_fingerprints": 1000,
+            "accuracy": 0.923,
+            "macro_f1": 0.92251363144939,
+            "nll": 0.6615520546002838,
+            "ece": 0.3514059003889561,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "100": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 100,
+            "n_fingerprints": 500,
+            "accuracy": 0.95,
+            "macro_f1": 0.9492676767676769,
+            "nll": 0.6518484891990672,
+            "ece": 0.37689216578006746,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          }
+        },
+        "43": {
+          "1": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 1,
+            "n_fingerprints": 50000,
+            "accuracy": 0.47458,
+            "macro_f1": 0.4722566545144628,
+            "nll": 1.6927426889132613,
+            "ece": 0.07986543487966061,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "5": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 5,
+            "n_fingerprints": 10000,
+            "accuracy": 0.7591,
+            "macro_f1": 0.758083687796977,
+            "nll": 0.8284135606588072,
+            "ece": 0.20671046530306347,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "10": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 10,
+            "n_fingerprints": 5000,
+            "accuracy": 0.8364,
+            "macro_f1": 0.8356733533370284,
+            "nll": 0.7343984579316033,
+            "ece": 0.27557456368207933,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "20": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 20,
+            "n_fingerprints": 2500,
+            "accuracy": 0.8792,
+            "macro_f1": 0.8787268800816971,
+            "nll": 0.6908610373716608,
+            "ece": 0.3126567667126655,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "50": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 50,
+            "n_fingerprints": 1000,
+            "accuracy": 0.925,
+            "macro_f1": 0.924708263334458,
+            "nll": 0.6625507079275258,
+            "ece": 0.35387466198205947,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "100": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 100,
+            "n_fingerprints": 500,
+            "accuracy": 0.95,
+            "macro_f1": 0.9492676767676769,
+            "nll": 0.6518484844140312,
+            "ece": 0.37689217054843904,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          }
+        },
+        "44": {
+          "1": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 1,
+            "n_fingerprints": 50000,
+            "accuracy": 0.47458,
+            "macro_f1": 0.4722566545144628,
+            "nll": 1.6927426889132613,
+            "ece": 0.0798654306846857,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "5": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 5,
+            "n_fingerprints": 10000,
+            "accuracy": 0.7616,
+            "macro_f1": 0.7609082202155136,
+            "nll": 0.8261778947244942,
+            "ece": 0.2087753886833787,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "10": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 10,
+            "n_fingerprints": 5000,
+            "accuracy": 0.8372,
+            "macro_f1": 0.8366321508497735,
+            "nll": 0.7328485656651205,
+            "ece": 0.27644198616743093,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "20": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 20,
+            "n_fingerprints": 2500,
+            "accuracy": 0.8876,
+            "macro_f1": 0.887164323572691,
+            "nll": 0.6901276850903658,
+            "ece": 0.3213587269306183,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "50": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 50,
+            "n_fingerprints": 1000,
+            "accuracy": 0.929,
+            "macro_f1": 0.9284816382970912,
+            "nll": 0.661604955762794,
+            "ece": 0.357514456242323,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          },
+          "100": {
+            "method": "dct_dc_ac_fullrank",
+            "K": 100,
+            "n_fingerprints": 500,
+            "accuracy": 0.95,
+            "macro_f1": 0.9492676767676769,
+            "nll": 0.6518484963355429,
+            "ece": 0.3768921638131142,
+            "alpha_calib": null,
+            "nll_calib": null,
+            "ece_calib": null
+          }
+        }
+      },
+      "cv_metrics_across_grouping_seeds": {
+        "1": {
+          "accuracy_mean": 0.47458,
+          "accuracy_std": 0.0,
+          "macro_f1_mean": 0.4722566545144628,
+          "macro_f1_std": 0.0,
+          "nll_mean": 1.6927426889132613,
+          "nll_std": 0.0,
+          "ece_mean": 0.07986543668548267,
+          "ece_std": 5.779672933502345e-09
+        },
+        "5": {
+          "accuracy_mean": 0.7593666666666667,
+          "accuracy_std": 0.0017249798710581197,
+          "macro_f1_mean": 0.7584456535909698,
+          "macro_f1_std": 0.0018804057599048332,
+          "nll_mean": 0.8271747173159114,
+          "nll_std": 0.0009286122533370692,
+          "ece_mean": 0.20658800901000704,
+          "ece_std": 0.0018380213610468812
+        },
+        "10": {
+          "accuracy_mean": 0.8349333333333334,
+          "accuracy_std": 0.002659991645767999,
+          "macro_f1_mean": 0.8344977268458761,
+          "macro_f1_std": 0.002373063965628422,
+          "nll_mean": 0.7336397299754793,
+          "nll_std": 0.0006331564299775433,
+          "ece_mean": 0.2739824487755696,
+          "ece_std": 0.00288675367869571
+        },
+        "20": {
+          "accuracy_mean": 0.8845333333333333,
+          "accuracy_std": 0.0037853518844209043,
+          "macro_f1_mean": 0.8839865511623634,
+          "macro_f1_std": 0.003745961356011478,
+          "nll_mean": 0.6902555966154296,
+          "nll_std": 0.0004512774586915195,
+          "ece_mean": 0.31830516443649925,
+          "ece_std": 0.003998408459269327
+        },
+        "50": {
+          "accuracy_mean": 0.9256666666666667,
+          "accuracy_std": 0.0024944382578492965,
+          "macro_f1_mean": 0.9252345110269798,
+          "macro_f1_std": 0.00246468103534248,
+          "nll_mean": 0.6619025727635345,
+          "nll_std": 0.0004588093477326092,
+          "ece_mean": 0.3542650062044462,
+          "ece_std": 0.0025090356862599284
+        },
+        "100": {
+          "accuracy_mean": 0.9499999999999998,
+          "accuracy_std": 1.1102230246251565e-16,
+          "macro_f1_mean": 0.9492676767676769,
+          "macro_f1_std": 0.0,
+          "nll_mean": 0.6518484899828805,
+          "nll_std": 4.898393100724785e-09,
+          "ece_mean": 0.3768921667138736,
+          "ece_std": 2.8278549707785717e-09
+        }
+      },
+      "external_evaluations": {}
+    }
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "dimensions": {
+        "dct_dc_fullrank": 4096,
+        "dct_ac_fullrank": 4096,
+        "dct_dc_ac_fullrank": 8192
+      },
+      "fit_diagnostics": {
+        "dct_dc_fullrank": {
+          "steps": 40,
+          "final_objective": 1.0996731519699097
+        },
+        "dct_ac_fullrank": {
+          "steps": 40,
+          "final_objective": 1.3155521154403687
+        },
+        "dct_dc_ac_fullrank": {
+          "steps": 40,
+          "final_objective": 0.5274336338043213
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "dimensions": {
+        "dct_dc_fullrank": 4096,
+        "dct_ac_fullrank": 4096,
+        "dct_dc_ac_fullrank": 8192
+      },
+      "fit_diagnostics": {
+        "dct_dc_fullrank": {
+          "steps": 40,
+          "final_objective": 1.1268874406814575
+        },
+        "dct_ac_fullrank": {
+          "steps": 40,
+          "final_objective": 1.3408935070037842
+        },
+        "dct_dc_ac_fullrank": {
+          "steps": 40,
+          "final_objective": 0.5486574172973633
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "dimensions": {
+        "dct_dc_fullrank": 4096,
+        "dct_ac_fullrank": 4096,
+        "dct_dc_ac_fullrank": 8192
+      },
+      "fit_diagnostics": {
+        "dct_dc_fullrank": {
+          "steps": 40,
+          "final_objective": 1.1275596618652344
+        },
+        "dct_ac_fullrank": {
+          "steps": 40,
+          "final_objective": 1.3636599779129028
+        },
+        "dct_dc_ac_fullrank": {
+          "steps": 40,
+          "final_objective": 0.5523689389228821
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "dimensions": {
+        "dct_dc_fullrank": 4096,
+        "dct_ac_fullrank": 4096,
+        "dct_dc_ac_fullrank": 8192
+      },
+      "fit_diagnostics": {
+        "dct_dc_fullrank": {
+          "steps": 40,
+          "final_objective": 1.1207406520843506
+        },
+        "dct_ac_fullrank": {
+          "steps": 40,
+          "final_objective": 1.3451499938964844
+        },
+        "dct_dc_ac_fullrank": {
+          "steps": 40,
+          "final_objective": 0.5496290326118469
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "dimensions": {
+        "dct_dc_fullrank": 4096,
+        "dct_ac_fullrank": 4096,
+        "dct_dc_ac_fullrank": 8192
+      },
+      "fit_diagnostics": {
+        "dct_dc_fullrank": {
+          "steps": 40,
+          "final_objective": 1.1196167469024658
+        },
+        "dct_ac_fullrank": {
+          "steps": 40,
+          "final_objective": 1.3460206985473633
+        },
+        "dct_dc_ac_fullrank": {
+          "steps": 40,
+          "final_objective": 0.5423093438148499
+        }
+      }
+    }
+  ],
+  "complete": true
+}

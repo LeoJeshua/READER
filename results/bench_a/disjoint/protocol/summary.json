@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "protocol": "bench_a_disjoint_balanced_pairs_v1",
+  "families_source": "$PROJECT_ROOT/outputs/bench_a_pairwise_blackbox_116/families_valid.json",
+  "seed": 42,
+  "n_models": 67,
+  "n_families": 9,
+  "n_positive_universe": 58,
+  "n_negative_universe": 1983,
+  "n_pairs_used_across_splits": 1647,
+  "model_disjoint": {
+    "n_splits": 20,
+    "test_child_fraction": 0.4,
+    "definition": "no endpoint model overlaps within a split; held-out families remain visible through non-held-out derived models in training"
+  },
+  "family_disjoint": {
+    "n_splits": 36,
+    "definition": "leave two complete parent families out; no endpoint model or parent family overlaps within a split"
+  },
+  "negative_sampling": "split-local uniform sampling without replacement from cross-family model pairs, balanced 1:1 to positives",
+  "complete": true
+}

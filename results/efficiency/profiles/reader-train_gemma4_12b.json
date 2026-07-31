@@ -1,0 +1,24 @@
+{
+  "created_at_unix": 1785401023.6389985,
+  "feature_dim": 7680,
+  "final_objectives": [
+    0.9049353003501892,
+    0.9049353003501892,
+    0.9049353003501892
+  ],
+  "hardware": "NVIDIA H200 140GB",
+  "median_seconds": 0.6289172507822514,
+  "method": "reader",
+  "mode": "reader-train",
+  "n_train": 40000,
+  "protocol": "agent500_compute_cost_v1",
+  "repeats": 3,
+  "seconds": [
+    1.807250950485468,
+    0.6289172507822514,
+    0.6206334680318832
+  ],
+  "tag": "gemma4_12b",
+  "trainable_parameters": 768100,
+  "training_scope": "one outer fold; feature archive already available; includes fold-local standardization and 40 full-batch Adam steps"
+}

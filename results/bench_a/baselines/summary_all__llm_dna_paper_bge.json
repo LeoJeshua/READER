@@ -1,0 +1,34 @@
+[
+  {
+    "method": "LLM-DNA-paper-fixed-RGP128-euclidean-maxlen512-pool-auto::mnt__shared-storage-gpfs2__gpfs2-shared-public__huggingface__zskj-hub__models--BAAI--bge-large-en-v1.5-RBF",
+    "n_splits": 20,
+    "svm_kernel": "rbf",
+    "svm_c": 1.0,
+    "accuracy_mean": 0.6312499642372131,
+    "accuracy_std": 0.06881310790777206,
+    "precision_mean": 0.6290339231491089,
+    "precision_std": 0.07754712551832199,
+    "recall_mean": 0.6666666269302368,
+    "recall_std": 0.14433756470680237,
+    "f1_mean": 0.637411892414093,
+    "f1_std": 0.08878986537456512,
+    "auc_mean": 0.7020832896232605,
+    "auc_std": 0.07568807154893875
+  },
+  {
+    "method": "LLM-DNA-paper-fixed-RGP128-euclidean-maxlen512-pool-auto::mnt__shared-storage-gpfs2__gpfs2-shared-public__huggingface__zskj-hub__models--BAAI--bge-large-en-v1.5-LINEAR",
+    "n_splits": 20,
+    "svm_kernel": "linear",
+    "svm_c": 1.0,
+    "accuracy_mean": 0.6312499642372131,
+    "accuracy_std": 0.07600598782300949,
+    "precision_mean": 0.6292084455490112,
+    "precision_std": 0.07793860882520676,
+    "recall_mean": 0.6458333730697632,
+    "recall_std": 0.13913173973560333,
+    "f1_mean": 0.6307289600372314,
+    "f1_std": 0.0961865484714508,
+    "auc_mean": 0.7222222089767456,
+    "auc_std": 0.07501929253339767
+  }
+]

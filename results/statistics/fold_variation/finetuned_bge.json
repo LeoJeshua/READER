@@ -1,0 +1,751 @@
+{
+  "schema_version": 1,
+  "method": "finetuned_llm_dna_bge",
+  "protocol": "prompt_grouped_v1_finetuned_fold_model_metrics",
+  "std_protocol": "population std across five Agent500 outer-fold models",
+  "predictions_root": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_sentence_encoder/bge_controlled_length_v1",
+  "agent500": {
+    "1": {
+      "accuracy_mean": 0.30256,
+      "accuracy_std_across_folds": 0.00810890868119748,
+      "macro_f1_mean": 0.2366864442694434,
+      "macro_f1_std_across_folds": 0.009056236159224507,
+      "per_fold": [
+        {
+          "fold": 0,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_sentence_encoder/bge_controlled_length_v1/fold_0/predictions.npz",
+          "metrics": {
+            "1": {
+              "accuracy": 0.2918,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.22598593931481034,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.2918,
+                  "macro_f1": 0.22598593931481034,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.2918,
+                  "macro_f1": 0.22598593931481034,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.2918,
+                  "macro_f1": 0.22598593931481034,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.49,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.37952380952380943,
+              "macro_f1_grouping_std": 5.551115123125783e-17,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.49,
+                  "macro_f1": 0.3795238095238095,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.49,
+                  "macro_f1": 0.3795238095238095,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.49,
+                  "macro_f1": 0.3795238095238095,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_sentence_encoder/bge_controlled_length_v1/fold_1/predictions.npz",
+          "metrics": {
+            "1": {
+              "accuracy": 0.3036,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.24121931174871183,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.3036,
+                  "macro_f1": 0.24121931174871183,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.3036,
+                  "macro_f1": 0.24121931174871183,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.3036,
+                  "macro_f1": 0.24121931174871183,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.43,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.32385714285714284,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.43,
+                  "macro_f1": 0.32385714285714284,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.43,
+                  "macro_f1": 0.32385714285714284,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.43,
+                  "macro_f1": 0.32385714285714284,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_sentence_encoder/bge_controlled_length_v1/fold_2/predictions.npz",
+          "metrics": {
+            "1": {
+              "accuracy": 0.3167,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.2515354048017866,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.3167,
+                  "macro_f1": 0.2515354048017866,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.3167,
+                  "macro_f1": 0.2515354048017866,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.3167,
+                  "macro_f1": 0.2515354048017866,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.47,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.36199999999999993,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.47,
+                  "macro_f1": 0.36199999999999993,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.47,
+                  "macro_f1": 0.36199999999999993,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.47,
+                  "macro_f1": 0.36199999999999993,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_sentence_encoder/bge_controlled_length_v1/fold_3/predictions.npz",
+          "metrics": {
+            "1": {
+              "accuracy": 0.2993,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.22944276197900706,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.2993,
+                  "macro_f1": 0.22944276197900706,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.2993,
+                  "macro_f1": 0.22944276197900706,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.2993,
+                  "macro_f1": 0.22944276197900706,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.45,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.33488888888888885,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.45,
+                  "macro_f1": 0.33488888888888885,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.45,
+                  "macro_f1": 0.33488888888888885,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.45,
+                  "macro_f1": 0.33488888888888885,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_sentence_encoder/bge_controlled_length_v1/fold_4/predictions.npz",
+          "metrics": {
+            "1": {
+              "accuracy": 0.3014,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.23524880350290114,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.3014,
+                  "macro_f1": 0.23524880350290114,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.3014,
+                  "macro_f1": 0.23524880350290114,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.3014,
+                  "macro_f1": 0.23524880350290114,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.45,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.33233333333333337,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.45,
+                  "macro_f1": 0.33233333333333337,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.45,
+                  "macro_f1": 0.33233333333333337,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.45,
+                  "macro_f1": 0.33233333333333337,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "100": {
+      "accuracy_mean": 0.458,
+      "accuracy_std_across_folds": 0.020396078054371134,
+      "macro_f1_mean": 0.34652063492063484,
+      "macro_f1_std_across_folds": 0.02087597275211838,
+      "per_fold": [
+        {
+          "fold": 0,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_sentence_encoder/bge_controlled_length_v1/fold_0/predictions.npz",
+          "metrics": {
+            "1": {
+              "accuracy": 0.2918,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.22598593931481034,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.2918,
+                  "macro_f1": 0.22598593931481034,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.2918,
+                  "macro_f1": 0.22598593931481034,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.2918,
+                  "macro_f1": 0.22598593931481034,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.49,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.37952380952380943,
+              "macro_f1_grouping_std": 5.551115123125783e-17,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.49,
+                  "macro_f1": 0.3795238095238095,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.49,
+                  "macro_f1": 0.3795238095238095,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.49,
+                  "macro_f1": 0.3795238095238095,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_sentence_encoder/bge_controlled_length_v1/fold_1/predictions.npz",
+          "metrics": {
+            "1": {
+              "accuracy": 0.3036,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.24121931174871183,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.3036,
+                  "macro_f1": 0.24121931174871183,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.3036,
+                  "macro_f1": 0.24121931174871183,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.3036,
+                  "macro_f1": 0.24121931174871183,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.43,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.32385714285714284,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.43,
+                  "macro_f1": 0.32385714285714284,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.43,
+                  "macro_f1": 0.32385714285714284,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.43,
+                  "macro_f1": 0.32385714285714284,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_sentence_encoder/bge_controlled_length_v1/fold_2/predictions.npz",
+          "metrics": {
+            "1": {
+              "accuracy": 0.3167,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.2515354048017866,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.3167,
+                  "macro_f1": 0.2515354048017866,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.3167,
+                  "macro_f1": 0.2515354048017866,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.3167,
+                  "macro_f1": 0.2515354048017866,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.47,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.36199999999999993,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.47,
+                  "macro_f1": 0.36199999999999993,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.47,
+                  "macro_f1": 0.36199999999999993,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.47,
+                  "macro_f1": 0.36199999999999993,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_sentence_encoder/bge_controlled_length_v1/fold_3/predictions.npz",
+          "metrics": {
+            "1": {
+              "accuracy": 0.2993,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.22944276197900706,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.2993,
+                  "macro_f1": 0.22944276197900706,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.2993,
+                  "macro_f1": 0.22944276197900706,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.2993,
+                  "macro_f1": 0.22944276197900706,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.45,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.33488888888888885,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.45,
+                  "macro_f1": 0.33488888888888885,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.45,
+                  "macro_f1": 0.33488888888888885,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.45,
+                  "macro_f1": 0.33488888888888885,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_sentence_encoder/bge_controlled_length_v1/fold_4/predictions.npz",
+          "metrics": {
+            "1": {
+              "accuracy": 0.3014,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.23524880350290114,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 10000,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.3014,
+                  "macro_f1": 0.23524880350290114,
+                  "n_fingerprints": 10000
+                },
+                "43": {
+                  "accuracy": 0.3014,
+                  "macro_f1": 0.23524880350290114,
+                  "n_fingerprints": 10000
+                },
+                "44": {
+                  "accuracy": 0.3014,
+                  "macro_f1": 0.23524880350290114,
+                  "n_fingerprints": 10000
+                }
+              }
+            },
+            "100": {
+              "accuracy": 0.45,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.33233333333333337,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.45,
+                  "macro_f1": 0.33233333333333337,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.45,
+                  "macro_f1": 0.33233333333333337,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.45,
+                  "macro_f1": 0.33233333333333337,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "math100": {
+    "100": {
+      "accuracy_mean": 0.202,
+      "accuracy_std_across_folds": 0.011661903789690587,
+      "macro_f1_mean": 0.13175704295704296,
+      "macro_f1_std_across_folds": 0.009003961358667802,
+      "per_fold": [
+        {
+          "fold": 0,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_sentence_encoder/bge_controlled_length_v1/fold_0/predictions.npz",
+          "metrics": {
+            "100": {
+              "accuracy": 0.19000000000000003,
+              "accuracy_grouping_std": 2.7755575615628914e-17,
+              "macro_f1": 0.13735714285714284,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.19,
+                  "macro_f1": 0.13735714285714284,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.19,
+                  "macro_f1": 0.13735714285714284,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.19,
+                  "macro_f1": 0.13735714285714284,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 1,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_sentence_encoder/bge_controlled_length_v1/fold_1/predictions.npz",
+          "metrics": {
+            "100": {
+              "accuracy": 0.19000000000000003,
+              "accuracy_grouping_std": 2.7755575615628914e-17,
+              "macro_f1": 0.12320512820512819,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.19,
+                  "macro_f1": 0.12320512820512819,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.19,
+                  "macro_f1": 0.12320512820512819,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.19,
+                  "macro_f1": 0.12320512820512819,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 2,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_sentence_encoder/bge_controlled_length_v1/fold_2/predictions.npz",
+          "metrics": {
+            "100": {
+              "accuracy": 0.22,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.14571428571428569,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.22,
+                  "macro_f1": 0.14571428571428569,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.22,
+                  "macro_f1": 0.14571428571428569,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.22,
+                  "macro_f1": 0.14571428571428569,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 3,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_sentence_encoder/bge_controlled_length_v1/fold_3/predictions.npz",
+          "metrics": {
+            "100": {
+              "accuracy": 0.21,
+              "accuracy_grouping_std": 0.0,
+              "macro_f1": 0.12148484848484849,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.21,
+                  "macro_f1": 0.12148484848484849,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.21,
+                  "macro_f1": 0.12148484848484849,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.21,
+                  "macro_f1": 0.12148484848484849,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        },
+        {
+          "fold": 4,
+          "source": "$PROJECT_ROOT/outputs/exp_agent_n500/100-way/finetuned_sentence_encoder/bge_controlled_length_v1/fold_4/predictions.npz",
+          "metrics": {
+            "100": {
+              "accuracy": 0.20000000000000004,
+              "accuracy_grouping_std": 2.7755575615628914e-17,
+              "macro_f1": 0.13102380952380951,
+              "macro_f1_grouping_std": 0.0,
+              "n_fingerprints": 100,
+              "by_grouping_seed": {
+                "42": {
+                  "accuracy": 0.2,
+                  "macro_f1": 0.13102380952380951,
+                  "n_fingerprints": 100
+                },
+                "43": {
+                  "accuracy": 0.2,
+                  "macro_f1": 0.13102380952380951,
+                  "n_fingerprints": 100
+                },
+                "44": {
+                  "accuracy": 0.2,
+                  "macro_f1": 0.13102380952380951,
+                  "n_fingerprints": 100
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "math100_fold_logposterior_ensemble": {
+    "100": {
+      "accuracy": 0.23,
+      "accuracy_grouping_std": 0.0,
+      "macro_f1": 0.1658181818181818,
+      "macro_f1_grouping_std": 0.0,
+      "n_fingerprints": 100,
+      "by_grouping_seed": {
+        "42": {
+          "accuracy": 0.23,
+          "macro_f1": 0.1658181818181818,
+          "n_fingerprints": 100
+        },
+        "43": {
+          "accuracy": 0.23,
+          "macro_f1": 0.1658181818181818,
+          "n_fingerprints": 100
+        },
+        "44": {
+          "accuracy": 0.23,
+          "macro_f1": 0.1658181818181818,
+          "n_fingerprints": 100
+        }
+      }
+    }
+  }
+}

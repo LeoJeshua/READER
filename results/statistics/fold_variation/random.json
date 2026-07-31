@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "method": "uniform_random_guessing",
+  "protocol": "balanced_panel_monte_carlo",
+  "std_protocol": "population std over independent uniform-random prediction runs",
+  "agent500": {
+    "1": {
+      "n_classes": 100,
+      "samples_per_class": 100,
+      "n_fingerprints": 10000,
+      "trials": 20000,
+      "accuracy_mean": 0.010002555000000002,
+      "accuracy_std": 0.000993794230198083,
+      "macro_f1_mean": 0.009977701800388756,
+      "macro_f1_std": 0.000992846435628479
+    },
+    "100": {
+      "n_classes": 100,
+      "samples_per_class": 1,
+      "n_fingerprints": 100,
+      "trials": 20000,
+      "accuracy_mean": 0.0100485,
+      "accuracy_std": 0.009941963978510483,
+      "macro_f1_mean": 0.007424451587301587,
+      "macro_f1_std": 0.007675899760942338
+    }
+  },
+  "math100": {
+    "100": {
+      "n_classes": 100,
+      "samples_per_class": 1,
+      "n_fingerprints": 100,
+      "trials": 20000,
+      "accuracy_mean": 0.0100485,
+      "accuracy_std": 0.009941963978510483,
+      "macro_f1_mean": 0.007424451587301587,
+      "macro_f1_std": 0.007675899760942338
+    }
+  }
+}
