@@ -2,12 +2,14 @@
 
 **Dynamic LLM Provenance from Query-Varying Interactions**
 
-[📄 Preprint](https://arxiv.org/abs/2606.10794) · [🌐 READER Atlas](https://github.com/LeoJeshua/READER-Atlas) · [📊 Released results](results/) · [🧪 Reproduction guide](docs/REPRODUCING.md)
+[English](README.md) | [简体中文](README_zh-CN.md)
+
+[📄 Preprint](https://arxiv.org/abs/2606.10794) · [🌐 READER Atlas](hhttps://leojeshua.github.io/READER-Atlas/) · [📊 Released results](results/) · [🧪 Reproduction guide](docs/REPRODUCING.md)
 
 READER identifies which enrolled language model produced a black-box response when prompts vary across interactions. A frozen proxy LLM reads each prompt-response pair, converts its response-token activation trajectory into a compact frequency-domain fingerprint, and produces source evidence through a lightweight linear probe. Bayesian evidence accumulation then combines multiple interactions across flexible query budgets.
 
 <p align="center">
-  <a href="https://github.com/LeoJeshua/READER-Atlas">
+  <a href="hhttps://leojeshua.github.io/READER-Atlas/">
     <img src="results/paper_figures/app.png" width="92%" alt="READER Atlas: interactive model-signature visualization">
   </a>
 </p>
@@ -142,7 +144,7 @@ tools/                    Release validation utilities
 mmlu_pro_api/             OpenAI-compatible MMLU-Pro evaluation
 ```
 
-The independent [READER Atlas](https://github.com/LeoJeshua/READER-Atlas) provides an interactive view of model-signature geometry across readers and attribution methods.
+The independent [READER Atlas](hhttps://leojeshua.github.io/READER-Atlas/) provides an interactive view of model-signature geometry across readers and attribution methods.
 
 ## 📄 Data and License
 
