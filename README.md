@@ -12,18 +12,10 @@ data** needed to reproduce the main results in the paper.
 
 ## Method at a glance
 
-**Provenance setting.** READER targets dynamic black-box auditing: the
-auditor sees query-varying prompts and generated responses, but has no
-access to target-model internals.
+**Provenance setting.** READER targets dynamic black-box auditing: the auditor sees query-varying prompts and generated responses, but has no access to target-model internals.
 
-![Provenance settings from white-box to dynamic black-box auditing](https://anonymous.4open.science/api/repo/READER/file/assets/setup.svg)
+**READER pipeline.** A frozen proxy LLM reads each black-box response,Spectral Trajectory Encoding aggregates selected hidden states within a response, and Bayesian Evidence Accumulation combines per-response posteriors across prompts for final source-model attribution.
 
-**READER pipeline.** A frozen proxy LLM reads each black-box response,
-temporal filtering aggregates selected hidden states within a response,
-and Bayesian evidence accumulation combines per-response posteriors
-across prompts for final source-model attribution.
-
-![Overview of the READER pipeline](https://anonymous.4open.science/api/repo/READER/file/assets/pipeline.svg)
 
 ## Repository layout
 
