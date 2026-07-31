@@ -23,7 +23,7 @@
           "label": "READER / Llama-3.1-8B-Instruct",
           "shortLabel": "Llama-3.1-8B-Instruct",
           "subtitle": "Llama-3.1-8B-Instruct Signatures",
-          "status": "preparing",
+          "status": "available",
           "data": "data/versions/20260730/reader-llama31-8b-instruct.json"
         },
         {
@@ -32,7 +32,7 @@
           "label": "READER / Gemma-4-12B-it",
           "shortLabel": "Gemma-4-12B-it",
           "subtitle": "Gemma-4-12B-it Signatures",
-          "status": "preparing",
+          "status": "available",
           "data": "data/versions/20260730/reader-gemma4-12b.json"
         },
         {
@@ -41,7 +41,7 @@
           "label": "READER / Ministral-3-8B-Instruct",
           "shortLabel": "Ministral-3-8B-Instruct",
           "subtitle": "Ministral-3-8B-Instruct Signatures",
-          "status": "preparing",
+          "status": "available",
           "data": "data/versions/20260730/reader-ministral3-8b.json"
         },
         {
@@ -50,7 +50,7 @@
           "label": "READER / OLMo-3-7B-Instruct",
           "shortLabel": "OLMo-3-7B-Instruct",
           "subtitle": "OLMo-3-7B-Instruct Signatures",
-          "status": "preparing",
+          "status": "available",
           "data": "data/versions/20260730/reader-olmo3-7b-instruct.json"
         },
         {
@@ -59,7 +59,7 @@
           "label": "READER / Qwen3-8B",
           "shortLabel": "Qwen3-8B",
           "subtitle": "Qwen3-8B Signatures",
-          "status": "preparing",
+          "status": "available",
           "data": "data/versions/20260730/reader-qwen3-8b.json"
         },
         {
@@ -68,7 +68,7 @@
           "label": "READER / Qwen3-32B",
           "shortLabel": "Qwen3-32B",
           "subtitle": "Qwen3-32B Signatures",
-          "status": "preparing",
+          "status": "available",
           "data": "data/versions/20260730/reader-qwen3-32b.json"
         },
         {
@@ -86,7 +86,7 @@
           "label": "LLM-DNA / MPNet",
           "shortLabel": "MPNet",
           "subtitle": "MPNet Response Signatures",
-          "status": "preparing",
+          "status": "available",
           "data": "data/versions/20260730/llm-dna-mpnet.json"
         },
         {
@@ -95,7 +95,7 @@
           "label": "LLM-DNA / BGE-large-en-v1.5",
           "shortLabel": "BGE-large-en-v1.5",
           "subtitle": "BGE Response Signatures",
-          "status": "preparing",
+          "status": "available",
           "data": "data/versions/20260730/llm-dna-bge.json"
         },
         {
@@ -104,7 +104,7 @@
           "label": "LLM-DNA / Qwen3-Embedding-8B",
           "shortLabel": "Qwen3-Embedding-8B",
           "subtitle": "Qwen3-Embedding-8B Response Signatures",
-          "status": "preparing",
+          "status": "available",
           "data": "data/versions/20260730/llm-dna-qwen3-embedding.json"
         }
       ]
