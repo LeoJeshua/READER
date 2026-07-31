@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "latestVersion": "20260730",
+  "versions": [
+    {
+      "id": "20260730",
+      "label": "20260730",
+      "modelCount": 165,
+      "defaultMethod": "reader-qwen35-9b",
+      "methods": [
+        {
+          "id": "reader-qwen35-9b",
+          "family": "READER",
+          "label": "READER / Qwen3.5-9B",
+          "shortLabel": "Qwen3.5-9B",
+          "subtitle": "Qwen3.5-9B Signatures",
+          "status": "available",
+          "data": "data/versions/20260730/reader-qwen35-9b.json"
+        },
+        {
+          "id": "reader-llama31-8b-instruct",
+          "family": "READER",
+          "label": "READER / Llama-3.1-8B-Instruct",
+          "shortLabel": "Llama-3.1-8B-Instruct",
+          "subtitle": "Llama-3.1-8B-Instruct Signatures",
+          "status": "preparing",
+          "data": "data/versions/20260730/reader-llama31-8b-instruct.json"
+        },
+        {
+          "id": "reader-gemma4-12b",
+          "family": "READER",
+          "label": "READER / Gemma-4-12B-it",
+          "shortLabel": "Gemma-4-12B-it",
+          "subtitle": "Gemma-4-12B-it Signatures",
+          "status": "preparing",
+          "data": "data/versions/20260730/reader-gemma4-12b.json"
+        },
+        {
+          "id": "reader-ministral3-8b",
+          "family": "READER",
+          "label": "READER / Ministral-3-8B-Instruct",
+          "shortLabel": "Ministral-3-8B-Instruct",
+          "subtitle": "Ministral-3-8B-Instruct Signatures",
+          "status": "preparing",
+          "data": "data/versions/20260730/reader-ministral3-8b.json"
+        },
+        {
+          "id": "reader-olmo3-7b-instruct",
+          "family": "READER",
+          "label": "READER / OLMo-3-7B-Instruct",
+          "shortLabel": "OLMo-3-7B-Instruct",
+          "subtitle": "OLMo-3-7B-Instruct Signatures",
+          "status": "preparing",
+          "data": "data/versions/20260730/reader-olmo3-7b-instruct.json"
+        },
+        {
+          "id": "reader-qwen3-8b",
+          "family": "READER",
+          "label": "READER / Qwen3-8B",
+          "shortLabel": "Qwen3-8B",
+          "subtitle": "Qwen3-8B Signatures",
+          "status": "preparing",
+          "data": "data/versions/20260730/reader-qwen3-8b.json"
+        },
+        {
+          "id": "reader-qwen3-32b",
+          "family": "READER",
+          "label": "READER / Qwen3-32B",
+          "shortLabel": "Qwen3-32B",
+          "subtitle": "Qwen3-32B Signatures",
+          "status": "preparing",
+          "data": "data/versions/20260730/reader-qwen3-32b.json"
+        },
+        {
+          "id": "reader-qwen35-27b",
+          "family": "READER",
+          "label": "READER / Qwen3.5-27B",
+          "shortLabel": "Qwen3.5-27B",
+          "subtitle": "Qwen3.5-27B Signatures",
+          "status": "preparing",
+          "data": "data/versions/20260730/reader-qwen35-27b.json"
+        },
+        {
+          "id": "llm-dna-mpnet",
+          "family": "LLM-DNA",
+          "label": "LLM-DNA / MPNet",
+          "shortLabel": "MPNet",
+          "subtitle": "MPNet Response Signatures",
+          "status": "preparing",
+          "data": "data/versions/20260730/llm-dna-mpnet.json"
+        },
+        {
+          "id": "llm-dna-bge",
+          "family": "LLM-DNA",
+          "label": "LLM-DNA / BGE-large-en-v1.5",
+          "shortLabel": "BGE-large-en-v1.5",
+          "subtitle": "BGE Response Signatures",
+          "status": "preparing",
+          "data": "data/versions/20260730/llm-dna-bge.json"
+        },
+        {
+          "id": "llm-dna-qwen3-embedding",
+          "family": "LLM-DNA",
+          "label": "LLM-DNA / Qwen3-Embedding-8B",
+          "shortLabel": "Qwen3-Embedding-8B",
+          "subtitle": "Qwen3-Embedding-8B Response Signatures",
+          "status": "preparing",
+          "data": "data/versions/20260730/llm-dna-qwen3-embedding.json"
+        }
+      ]
+    }
+  ]
+}
