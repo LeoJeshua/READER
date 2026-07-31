@@ -77,7 +77,7 @@
           "label": "READER / Qwen3.5-27B",
           "shortLabel": "Qwen3.5-27B",
           "subtitle": "Qwen3.5-27B Signatures",
-          "status": "preparing",
+          "status": "available",
           "data": "data/versions/20260730/reader-qwen35-27b.json"
         },
         {
