@@ -4,13 +4,13 @@
 
 [English](README.md) | [简体中文](README_zh-CN.md)
 
-[📄 预印本](https://arxiv.org/abs/2606.10794) · [🌐 READER Atlas](https://leojeshua.github.io/READER-Atlas/) · [📊 实验结果](results/) · [🧪 复现指南](docs/REPRODUCING.md)
+[📄 预印本](https://arxiv.org/abs/2606.10794) · [🌐 3D Model Atlas](https://leojeshua.github.io/READER-Atlas/) · [📊 实验结果](results/) · [🧪 复现指南](docs/REPRODUCING.md)
 
 READER 研究如何从 query-varying 的黑盒交互中识别已注册的来源大模型。冻结的代理 LLM 读取每个 prompt-response 对，将 response-token 激活轨迹编码为紧凑的频域指纹，再由轻量级线性探针产生来源证据。Bayesian Evidence Accumulation 可以在不同查询预算下持续累积多次交互的判断。
 
 <p align="center">
   <a href="https://leojeshua.github.io/READER-Atlas/">
-    <img src="results/paper_figures/app.png" width="92%" alt="READER Atlas：交互式模型指纹可视化">
+    <img src="results/paper_figures/app.png" width="92%" alt="3D Model Atlas：交互式模型指纹可视化">
   </a>
 </p>
 
@@ -144,7 +144,7 @@ tools/                    发布校验工具
 mmlu_pro_api/             OpenAI-compatible MMLU-Pro 评测
 ```
 
-独立的 [READER Atlas](https://leojeshua.github.io/READER-Atlas/) 支持交互式查看不同代理、方法与领域下的模型指纹几何。
+独立的 [3D Model Atlas](https://leojeshua.github.io/READER-Atlas/) 支持交互式查看不同代理、方法与领域下的模型指纹几何。
 
 ## 📄 数据与许可
 
